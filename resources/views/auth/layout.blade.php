@@ -22,11 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/dev-design-logo.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('admin-assets/images/dev-design-logo.png') }}">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-select/css/bootstrap-select.min.css') }}">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('admin-assets/vendor/bootstrap-select/css/bootstrap-select.min.css') }}">
+    <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
@@ -46,10 +46,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('assets/vendor/global/global.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.min.js') }}"></script>
-    <script src="{{ asset('assets/js/deznav-init.js') }}"></script>
+    <script src="{{ asset('admin-assets/vendor/global/global.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/vendor/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/custom.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/deznav-init.js') }}"></script>
 </body>
 
 </html>

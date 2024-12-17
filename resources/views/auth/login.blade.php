@@ -5,7 +5,7 @@
     <div class="col-xl-12">
         <div class="auth-form">
             <div class="text-center mb-3">
-                <a href="index.html"><img src="{{ asset('assets/images/dev-design-logo.png') }}" alt=""></a>
+                <a href="index.html"><img src="{{ asset('admin-assets/images/dev-design-logo.png') }}" alt=""></a>
             </div>
             <h4 class="text-center mb-4">Sign in your account</h4>
             <form action="{{ route('auth.login.submit') }}" method="POST">
