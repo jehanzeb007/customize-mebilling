@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="page-titles">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">CMS</a></li>
+                    <li class="breadcrumb-item"><a href="{{route('admin.slider.showslider')}}">Slider</a></li>
                     <li class="breadcrumb-item active"><a href="javascript:void(0)">Add Slider</a></li>
                 </ol>
             </div>
@@ -31,10 +31,7 @@
 
                             <div id="imagePreview" class="mt-3 d-flex flex-wrap" style="gap: 10px; cursor: pointer;">
                                 @if (isset($slider) && $slider->image_paths)
-                                    @php
-                                        $images = json_decode($slider->image_paths, true) ?? [];
-                                    @endphp
-                                    @foreach ($images as $image)
+                                    @foreach ($slider->image_paths as $image)
                                         <div class="image-container position-relative m-2" data-id="{{ $loop->index }}">
                                             <input type="hidden" name="uploaded_images[]" value="{{ $image }}">
                                             <img src="{{ Storage::url($image) }}" class="img-thumbnail"

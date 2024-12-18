@@ -16,6 +16,9 @@ class SliderController extends Controller
         $slider = null;
         if ($id) {
             $slider = Slider::findOrFail($id);
+            if ($slider && $slider->image_paths) {
+                $slider->image_paths = json_decode($slider->image_paths, true);
+            }
         }
         return view('dashboard.slider.add-slider-content', compact('slider'));
     }
@@ -52,7 +55,7 @@ class SliderController extends Controller
             'slug' => 'required',
             'images.*' => 'image|mimes:jpg,jpeg,png,gif|max:2048'
         ]);
-       
+
         $slider = Slider::findOrFail($id);
 
         // Get existing images
@@ -71,7 +74,7 @@ class SliderController extends Controller
         // Upload new images
         $newImagePaths = $this->handleImageUpload($request, $slider->id);
 
-        
+
         // Merge existing submitted images with new uploads
         $finalImagePaths = array_merge($existingImages, $newImagePaths);
 
@@ -84,7 +87,7 @@ class SliderController extends Controller
         return redirect()->route('admin.slider.showslider')->with('success', 'Slider updated successfully!');
     }
 
-  
+
 
     private function handleImageUpload(Request $request, $sliderId)
     {

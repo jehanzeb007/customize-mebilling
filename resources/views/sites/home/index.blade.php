@@ -28,7 +28,18 @@
                                                                     <div class="owl-stage-outer">
                                                                         <div class="owl-stage"
                                                                              style="transform: translate3d(-2292px, 0px, 0px); transition: all; width: 9168px;">
-                                                                            <div class="owl-item">
+                                                                             @foreach ($sliders as $slider)
+                                                                                <div class="owl-item">
+                                                                                    <div class="row ">
+
+                                                                                        <div class="col-lg-12">
+                                                                                            <img src="{{ Storage::url($slider) }}" alt="header-img"
+                                                                                                class="header-img" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                             @endforeach
+                                                                            {{-- <div class="owl-item">
                                                                                 <div class="row ">
 
                                                                                     <div class="col-lg-12">
@@ -52,7 +63,7 @@
                                                                                              class="header-img" />
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
+                                                                            </div> --}}
 
                                                                         </div>
                                                                     </div>
