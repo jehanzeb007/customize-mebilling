@@ -37,6 +37,16 @@
                                     @enderror
                                 </div>
 
+                                <!--Position Field -->
+                                <div class="mb-3">
+                                    <label class="form-label">Position</label>
+                                    <input type="text" name="position" value="{{ old('position', $testimonial->position) }}"
+                                        class="form-control w-100" placeholder="Enter your position">
+                                    @error('position')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+
                                 <!-- Testimonial Field -->
                                 <div class="card h-auto mb-3">
                                     <div class="card-body pt-3">

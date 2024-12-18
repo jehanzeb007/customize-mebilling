@@ -23,9 +23,9 @@ class TestimonialsRequest extends FormRequest
 {
     return [
         'name' => 'required|string|max:255',
-        'testimonial' => 'required|string',  
-        'rating' => 'required|integer|min:1|max:5',
-        'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
+        'testimonial' => 'required|string',
+//        'rating' => 'required|integer|min:1|max:5',
+//        'image' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
     ];
 }
 
@@ -33,7 +33,7 @@ public function messages()
 {
     return [
         'name.required' => 'Name is required.',
-        'testimonial.required' => 'Testimonial content is required.', 
+        'testimonial.required' => 'Testimonial content is required.',
         'rating.required' => 'Rating is required.',
         'rating.integer' => 'Rating must be a number between 1 and 5.',
         'image.image' => 'The uploaded file must be an image.',
