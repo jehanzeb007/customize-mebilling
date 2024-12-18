@@ -803,11 +803,22 @@
 
                     <div class="col-lg-10">
                         <div class="testimonial-active owl-carousel" id="testimonial">
-
+                            @foreach ($testimonials as $index => $testimonial)
                             <div class="single-testimonial">
                                 <div class="testi-img">
 
-                                    <img src="{{ asset('assets/images/meBilling.png') }}" />
+                                    @if ($testimonial->image)
+{{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}"--}}
+{{--                                             alt="{{ $testimonial->name }}" width="50">--}}
+                                        <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}" width="50">
+                                    @else
+                                        <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}" width="50">
+
+
+                                        {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" />--}}
+                                    @endif
+
+
 
                                 </div>
                                 <div class="single-testimonial-bg">
@@ -815,123 +826,16 @@
                                             alt="img"></div>
                                     <div class="testi-author">
                                         <div class="ta-info">
-                                            <h6>Dr. Muhammad Tariq</h6>
-                                            <span>Director MD, Shifa Medical Center – Brooklyn, NY</span>
+                                            <h6>{{ $testimonial->name }}</h6>
+                                            <span>{{ $testimonial->position }}</span>
 
                                         </div>
                                     </div>
-                                    <p>Ever since we partnered with MeBilling, growth in our
-                                        collections has been more than what we anticipated. Their aggressive and
-                                        professional approach has made it all possible. The other factor is
-                                        their
-                                        accessibility, as they are flexible and easily approachable at my
-                                        convenience.</p>
+                                    <p>{{ strip_tags($testimonial->testimonial)}}</p>
                                 </div>
 
                             </div>
-                            <div class="single-testimonial">
-                                <div class="testi-img">
-
-                                    <img src="{{ asset('assets/images/dr_badar.jpg') }}" />
-                                </div>
-                                <div class="single-testimonial-bg">
-                                    <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                            alt="img"></div>
-                                    <div class="testi-author">
-                                        <div class="ta-info">
-                                            <h6>Dr. Badar Kanwar MD</h6>
-                                            <span>Hunt Regional Medical Center, Greenville, TX</span>
-
-                                        </div>
-                                    </div>
-                                    <p>MeBilling helped us in achieving the goals of our monthly
-                                        collection, and our denials are reduced significantly. They provided us
-                                        a
-                                        team of experienced personnel devoted to our account and assigned us an
-                                        account manager who is extremely professional, friendly, and attentive.
-                                        We
-                                        are delighted that we partnered with MeBilling in our revenue cycle
-                                        area.</p>
-                                </div>
-
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="testi-img">
-                                    <img src="{{ asset('assets/images/meBilling.png') }}" />
-
-                                </div>
-                                <div class="single-testimonial-bg">
-                                    <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                            alt="img"></div>
-                                    <div class="testi-author">
-                                        <div class="ta-info">
-                                            <h6>Dr. Kimberly Dunn MD, President</h6>
-                                            <span>K-Dunn and Associates, P.A. (DBA HealthQuilt), Houston, TX</span>
-
-                                        </div>
-                                    </div>
-                                    <p>I strongly recommend MeBilling to anyone, who is currently
-                                        suffering from their current revenue cycle operations, their approach is
-                                        very professional, and they are excellent in account management.
-                                        Moreover, our collections have significantly improved ever since we
-                                        switched to MeBilling, their operations are structured and the team
-                                        assigned to us is quite knowledgeable and expert in what they do.</p>
-                                </div>
-
-                            </div>
-
-                            <div class="single-testimonial">
-                                <div class="testi-img">
-
-                                    <img src="{{ asset('assets/images/dr_azeem.jpg') }}" />
-
-                                </div>
-                                <div class="single-testimonial-bg">
-                                    <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                            alt="img"></div>
-                                    <div class="testi-author">
-                                        <div class="ta-info">
-                                            <h6>Dr. Syed Khaja Azeemuddin MD</h6>
-                                            <span>Dr. Syed Khaja Azeemuddin MD</span>
-
-                                        </div>
-                                    </div>
-                                    <p>Ever since we partnered with MeBilling, growth in our
-                                        collections has been more than what we anticipated. Their aggressive and
-                                        professional approach has made it all possible. The other factor is
-                                        their accessibility, as they are flexible and easily approachable at my
-                                        convenience.</p>
-                                </div>
-
-                            </div>
-
-                            <div class="single-testimonial">
-                                <div class="testi-img">
-
-
-                                    <img src="{{ asset('assets/images/meBilling.png') }}" />
-
-                                </div>
-                                <div class="single-testimonial-bg">
-                                    <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                            alt="img"></div>
-                                    <div class="testi-author">
-                                        <div class="ta-info">
-                                            <h6>Dr. Muhammad Khan MD/ Dr. Rehan Khan MD</h6>
-                                            <span>Director Muhammad J.S. Khan MD PC, Elmhurst, NY</span>
-
-                                        </div>
-                                    </div>
-                                    <p>MeBilling has tremendously fulfilled all of our
-                                        expectations, in every area of Revenue Cycle Management and Account
-                                        management. They are a team of dedicated and detail-oriented people who
-                                        just not take your account as another client business, but they work
-                                        with a great knowledge and passion in order to achieve our revenue
-                                        goals.</p>
-                                </div>
-
-                            </div>
-
+                            @endforeach
                         </div>
 
                     </div>

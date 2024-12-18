@@ -4,6 +4,7 @@ namespace App\Http\Controllers\SuperAdmin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\TestimonialsRequest;
+use Illuminate\Support\Facades\View;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Storage;
@@ -30,14 +31,23 @@ class TestimonialsController extends Controller
     }
 
 
+
     public function store(TestimonialsRequest $request)
     {
+
+        // Handle image upload (if image is provided)
+        $imagePath = $request->hasFile('image')
+            ? $request->file('image')->store('testimonials', 'public')
+            : null; // Default to null if no image is uploaded
+
+
         // Handle image upload
-        $imagePath = $this->handleImageUpload($request);  // Custom image upload method
+//        $imagePath = $this->handleImageUpload($request); .. // Custom image upload method
 
         // Create the testimonial
         Testimonial::create([
             'name' => $request->name,
+            'position' => $request->position,
             'testimonial' => $request->testimonial,
             'rating' => $request->rating,
             'image' => $imagePath,  // If an image is uploaded
@@ -116,17 +126,17 @@ class TestimonialsController extends Controller
     }
 
 
-   
+
 
     public function edit($id)
     {
         // Find the testimonial by ID
         $testimonial = Testimonial::findOrFail($id);
-    
+
         // Pass the testimonial to the edit view
         return view('dashboard.testimonials.add-testimonials', compact('testimonial'));
     }
-    
+
 
 
 
