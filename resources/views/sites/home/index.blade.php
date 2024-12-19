@@ -195,184 +195,184 @@
 
             <div class="solutuons-wrapper">
                 <div class="container">
-                  <div class="inner">
-                    <div class="section-title text-center mb-4">
-                        <span>Core Objective</span>
-                        <p>Supplying Finest Services at Right Time, in conjunction with best People</p>
-                    </div>
-
-                    <div id="core-objectives" class="owl-carousel owl-solution owl-theme">
-                      <div class="solution-carousel-wrapper">
-                        <div class="row align-items-center">
-                          <div class="col-12 col-md-6">
-                            <div class="content">
-                                <h4 class="title-small">
-                                    Credentaling
-                                </h4>
-                                <p class="subtitle mb-3">
-                                    To provide Quality Service, We can help you with a fully
-                                    grasped team of Credentialing and Enrollment.
-                                    The team takes the best care of Form Preparation, Enrollment
-                                    Formalities, Re-credentialing, electronic submission of
-                                    documents, EDI setups and CLIA, CAQH, DEAs, NPI, and TIN
-                                    Registrations.
-                                </p>
-
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="image-wrapper">
-                                <img src="{{ asset('assets/images/Credentaling.jpg') }}" alt="">
-                            </div>
-                          </div>
-
+                    <div class="inner">
+                        <div class="section-title text-center mb-4">
+                            <span>Core Objective</span>
+                            <p>Supplying Finest Services at Right Time, in conjunction with best People</p>
                         </div>
-                      </div>
-                      <div class="solution-carousel-wrapper">
-                        <div class="row align-items-center">
-                          <div class="col-12 col-md-6">
-                            <div class="content">
-                                <h4 class="title-small">Patient Enrollment
-                                </h4>
-                                <p class="subtitle mb-3">
-                                    By providing enrollment services we are at the epic level of
-                                    patient care. Where patients can enroll themselves in just
-                                    meantime. When it comes to patient enrollment, the whole
-                                    system of verbal exchange among physicians and patients is
-                                    quite a time taking. However, MeBilling has established a
-                                    team of experts who created a smart and less time taking
-                                    enrollment process with maximum ease of visitors.
-                                </p>
 
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="image-wrapper">
-                                <img src="{{ asset('assets/images/enrollment.jpg') }}" alt="">
-                            </div>
-                          </div>
+                        <div id="core-objectives" class="owl-carousel owl-solution owl-theme">
+                            <div class="solution-carousel-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">
+                                                Credentaling
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                To provide Quality Service, We can help you with a fully
+                                                grasped team of Credentialing and Enrollment.
+                                                The team takes the best care of Form Preparation, Enrollment
+                                                Formalities, Re-credentialing, electronic submission of
+                                                documents, EDI setups and CLIA, CAQH, DEAs, NPI, and TIN
+                                                Registrations.
+                                            </p>
 
-                        </div>
-                      </div>
-                      <div class="solution-carousel-wrapper">
-                        <div class="row align-items-center">
-                          <div class="col-12 col-md-6">
-                            <div class="content">
-                                <h4 class="title-small">Smart Scheduling
-                                </h4>
-                                <p class="subtitle mb-3">
-                                    SMART SCHEDULING
-                                    Through the smart scheduling feature, patients can get
-                                    coordinated and streamlined appointments at their
-                                    convenience. Complete registration off-site before the
-                                    visit, so patient must not be delayed at the front desk.
-                                    This practice will save their time and reduce confusion.
-                                    They will also avail the privilege of automated
-                                    pre-appointment reminders and cancellations or reschedule
-                                    visits via email and text.
-                                </p>
-
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="image-wrapper">
-                                <img src="{{ asset('assets/images/scheduling.jpg') }}" alt="">
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="solution-carousel-wrapper">
-                        <div class="row align-items-center">
-                          <div class="col-12 col-md-6">
-                            <div class="content">
-                                <h4 class="title-small">
-                                    Appointment Reminders
-                                </h4>
-                                <p class="subtitle mb-3">
-                                    A dedicated team has been assigned to fulfill the
-                                    responsibility of appointment
-                                    reminders. Patients are timely prompted for the next visit
-                                    to ensure the healthy
-                                    outcome.
-                                    <br>
-                                    1. Real time Phone Reminder.
-                                    <br>
-                                    2. Reminder Texting System.
-                                    <br>
-                                    3. Email Reminder System.
-                                </p>
-
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="image-wrapper">
-                                <img src="{{ asset('assets/images/reminder.jpg') }}" alt="">
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="solution-carousel-wrapper">
-
-                        <div class="row align-items-center">
-                            <div class="col-12 col-md-6">
-                                <div class="content">
-                                    <h4 class="title-small">
-                                        Eligibility Verification
-                                    </h4>
-                                    <p class="subtitle mb-3">
-                                        According to industry sources,25% of all health care claim
-                                        denials are because a patient is not eligible for services
-                                        billed to the insurer by the provider. Often, a patient
-                                        would be ineligible for benefits because his or her policy
-                                        has been terminated or modified etc.Our well-trained staff
-                                        verify the eligibility of patient’s benefits coverage (which
-                                        are being provided) through software or calls to reduce the
-                                        claim denials and expedite the payments at proper rates
-                                    </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/Credentaling.jpg') }}" alt="">
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <div class="image-wrapper">
-                                    <img src="{{ asset('assets/images/verification.jpg') }}" alt="">
+                            <div class="solution-carousel-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">Patient Enrollment
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                By providing enrollment services we are at the epic level of
+                                                patient care. Where patients can enroll themselves in just
+                                                meantime. When it comes to patient enrollment, the whole
+                                                system of verbal exchange among physicians and patients is
+                                                quite a time taking. However, MeBilling has established a
+                                                team of experts who created a smart and less time taking
+                                                enrollment process with maximum ease of visitors.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/enrollment.jpg') }}" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="solution-carousel-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">Smart Scheduling
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                SMART SCHEDULING
+                                                Through the smart scheduling feature, patients can get
+                                                coordinated and streamlined appointments at their
+                                                convenience. Complete registration off-site before the
+                                                visit, so patient must not be delayed at the front desk.
+                                                This practice will save their time and reduce confusion.
+                                                They will also avail the privilege of automated
+                                                pre-appointment reminders and cancellations or reschedule
+                                                visits via email and text.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/scheduling.jpg') }}" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="solution-carousel-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">
+                                                Appointment Reminders
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                A dedicated team has been assigned to fulfill the
+                                                responsibility of appointment
+                                                reminders. Patients are timely prompted for the next visit
+                                                to ensure the healthy
+                                                outcome.
+                                                <br>
+                                                1. Real time Phone Reminder.
+                                                <br>
+                                                2. Reminder Texting System.
+                                                <br>
+                                                3. Email Reminder System.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/reminder.jpg') }}" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="solution-carousel-wrapper">
+
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">
+                                                Eligibility Verification
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                According to industry sources,25% of all health care claim
+                                                denials are because a patient is not eligible for services
+                                                billed to the insurer by the provider. Often, a patient
+                                                would be ineligible for benefits because his or her policy
+                                                has been terminated or modified etc.Our well-trained staff
+                                                verify the eligibility of patient’s benefits coverage (which
+                                                are being provided) through software or calls to reduce the
+                                                claim denials and expedite the payments at proper rates
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/verification.jpg') }}" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="solution-carousel-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6">
+                                        <div class="content">
+                                            <h4 class="title-small">
+                                                Insurance Authorizations
+                                            </h4>
+                                            <p class="subtitle mb-3">
+                                                Pre-authorization / Pre-Certification is taken well ahead of
+                                                the patient’s visit. We ensure less fear of claim denials
+                                                and correctly determine the payment flow. Qualified staff
+                                                timely authorize the services through Portals, Calls, and
+                                                Fax.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="image-wrapper">
+                                            <img src="{{ asset('assets/images/insurance.jpg') }}" alt="">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="solution-carousel-wrapper">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-md-6">
-                                <div class="content">
-                                    <h4 class="title-small">
-                                        Insurance Authorizations
-                                    </h4>
-                                    <p class="subtitle mb-3">
-                                        Pre-authorization / Pre-Certification is taken well ahead of
-                                        the patient’s visit. We ensure less fear of claim denials
-                                        and correctly determine the payment flow. Qualified staff
-                                        timely authorize the services through Portals, Calls, and
-                                        Fax.
-                                    </p>
-
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="image-wrapper">
-                                    <img src="{{ asset('assets/images/insurance.jpg') }}" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </section>
 
         <!-- core-objective-area-end -->
@@ -907,39 +907,43 @@
 
                     <div class="col-lg-10">
                         <div class="testimonial-active owl-carousel" id="testimonial">
-                            @foreach ($testimonials as $index => $testimonial)
-                            <div class="single-testimonial">
-                                <div class="testi-img">
+                            @if (!empty($testimonials))
+                                @foreach ($testimonials as $index => $testimonial)
+                                    <div class="single-testimonial">
+                                        <div class="testi-img">
 
-                                    @if ($testimonial->image)
-{{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}"--}}
-{{--                                             alt="{{ $testimonial->name }}" width="50">--}}
-                                        <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}" width="50">
-                                    @else
-                                        <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}" width="50">
-
-
-                                        {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" />--}}
-                                    @endif
-
+                                            @if ($testimonial->image)
+                                                {{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}" --}}
+                                                {{--                                             alt="{{ $testimonial->name }}" width="50"> --}}
+                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
+                                                    width="50">
+                                            @else
+                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
+                                                    width="50">
 
 
-                                </div>
-                                <div class="single-testimonial-bg">
-                                    <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                            alt="img"></div>
-                                    <div class="testi-author">
-                                        <div class="ta-info">
-                                            <h6>{{ $testimonial->name }}</h6>
-                                            <span>{{ $testimonial->position }}</span>
+                                                {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" /> --}}
+                                            @endif
+
+
 
                                         </div>
-                                    </div>
-                                    <p>{{ strip_tags($testimonial->testimonial)}}</p>
-                                </div>
+                                        <div class="single-testimonial-bg">
+                                            <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
+                                                    alt="img"></div>
+                                            <div class="testi-author">
+                                                <div class="ta-info">
+                                                    <h6>{{ $testimonial->name }}</h6>
+                                                    <span>{{ $testimonial->position }}</span>
 
-                            </div>
-                            @endforeach
+                                                </div>
+                                            </div>
+                                            <p>{{ strip_tags($testimonial->testimonial) }}</p>
+                                        </div>
+
+                                    </div>
+                                @endforeach
+                            @endif
                         </div>
 
                     </div>

@@ -23,9 +23,9 @@ class AppServiceProvider extends ServiceProvider
         } else {
             $setting = null;
         }
-    
+
         $siteName = $settings['site_name']->data_value ?? 'Dev & Design Dashboard'; // Default site name
-        $footerText = $settings['footer_text']->data_value ?? config('site.default_footer_text');
+        $footerText = $settings['footer_text']->data_value ?? 'footer text';
         $logoPath = $settings['logo']->data_value ?? config('site.default_logo');
         $metaTitle = $settings['meta_title']->data_value ?? config('app.name'); // Default to app name
         $metaDescription = $settings['meta_description']->data_value ?? 'Default description for your application.';
@@ -37,9 +37,9 @@ class AppServiceProvider extends ServiceProvider
         View::share('metaTitle', $metaTitle);
         View::share('metaDescription', $metaDescription);
     }
-    
-    
-    
+
+
+
 
     /**
      * Register any application services.

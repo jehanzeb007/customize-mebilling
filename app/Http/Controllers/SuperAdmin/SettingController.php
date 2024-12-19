@@ -18,7 +18,7 @@ class SettingController extends Controller
     $currentSettings = Setting::where('type', '!=', 'contact setting')->get()->keyBy('data_key');
     $logoPath = $currentSettings['logo']->data_value ?? 'default-logo.png';  // Default logo if not found
     $footerText = $currentSettings['footer_text']->data_value ?? 'Default footer text';
-    
+
     return view('dashboard.settings.setting-site-listing', compact('currentSettings', 'logoPath', 'footerText'));
 }
 
@@ -52,23 +52,23 @@ class SettingController extends Controller
      */
     public function storeSetting(SettingRequest $request)
 {
-   
+
     if ($request->input('type') === 'site_setting') {
         $this->handleSiteSettings($request);
 
-       
+
         return redirect()->route('admin.settings.settingpagelist')->with('success', 'Site settings updated successfully.');
     }
 
-    
+
     if ($request->input('type') === 'contact_setting') {
         $this->handleContactSettings($request);
 
-       
+
         return redirect()->route('admin.settings.contactlist')->with('success', 'Contact settings updated successfully.');
     }
 
-   
+
     return redirect()->route('admin.settings.settingpagelist')->with('error', 'Invalid setting type.');
 }
 
@@ -78,33 +78,33 @@ class SettingController extends Controller
      */
     private function handleSiteSettings($request)
     {
-        
         foreach ($request->all() as $key => $value) {
-            
-            if ($key !== 'type' && $key !== '_token' && $key !== 'logo') { 
+
+            if ($key !== 'type' && $key !== '_token' && $key !== 'logo') {
+                $data_value = empty($value) ? null : $value;
                 Setting::updateOrCreate(
-                    ['data_key' => $key, 'type' => 'site_setting'], 
-                    ['data_value' => $value] 
+                    ['data_key' => $key, 'type' => 'site_setting'],
+                    ['data_value' => $data_value]
                 );
             }
         }
-    
-        // Handle the logo file upload separately 
+
+        // Handle the logo file upload separately
         if ($request->hasFile('logo')) {
             $this->handleLogoUpload($request);
         }
     }
-    
+
     /**
      * Handle contact settings update.
      */
     private function handleContactSettings($request)
     {
-     
+
         $inputFields = $request->all();
-    
+
         foreach ($inputFields as $key => $value) {
-         
+
             if (is_string($value) && $key !== '_token' && $key !== 'type') {
                 Setting::updateOrCreate(
                     ['data_key' => $key, 'type' => 'contact setting'],
@@ -113,7 +113,7 @@ class SettingController extends Controller
             }
         }
     }
-    
+
 
     /**
      * Handle logo file upload for site settings.
