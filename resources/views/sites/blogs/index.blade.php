@@ -28,10 +28,10 @@
                             </div>
                             <h2><a href="blog-details.html">{{$blog->name}}</a></h2>
                             <p>{{strip_tags($blog->description)}}</p>
-                            <div class="slider-btn">
-                                <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read More
-                                    <i class="fas fa-chevron-right"></i></a>
-                            </div>
+{{--                            <div class="slider-btn">--}}
+{{--                                <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read More--}}
+{{--                                    <i class="fas fa-chevron-right"></i></a>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                     @endforeach

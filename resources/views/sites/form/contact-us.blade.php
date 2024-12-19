@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="contact-img">
-                <img src="{{ asset('assets/images/touch-illustration.png') }}" alt="touch-illustration">
+                <img src="{{ asset('assets/images/contact.jpg') }}" alt="touch-illustration">
             </div>
         </div>
         <div class="col-lg-6">

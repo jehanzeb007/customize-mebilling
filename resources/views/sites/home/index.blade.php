@@ -22,49 +22,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="container">
-                                    <div class="slider-active2">
-                                        <div class="single-slider slider-bg d-flex align-items-center">
-                                            <div id="header" class="owl-carousel  owl-loaded owl-drag">
-                                                <div class="owl-stage-outer">
-                                                    <div class="owl-stage"
-                                                        style="transform: translate3d(-2292px, 0px, 0px); transition: all; width: 9168px;">
-                                                        <div class="owl-item">
-                                                            <div class="row ">
-
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/header-img.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item ">
-                                                            <div class="row ">
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/bg1.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item ">
-                                                            <div class="row ">
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/Pic 2.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="col-lg-12">
+                                    <img src="assets/images/header-img.png" alt="header-img"
+                                         class="header-img" />
                                 </div>
-
                             </div>
-
 
         </section>
 
@@ -135,7 +98,7 @@
         <section class="department-area cta-bg p-0 fix mt-5 mb-5">
             <div class="container">
 
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-lg-6">
                         <ul class="p-0">
                             <li class="align-items-center points">
@@ -177,8 +140,8 @@
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="s-d-img p-relative points">
-                            <img src="{{ asset('assets/images/de-illustration.png') }}" alt="img">
+                        <div class="s-d-img p-relative">
+                            <img src="{{ asset('assets/images/doctor.jpg') }}" alt="img">
 
                         </div>
 
@@ -222,7 +185,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/Credentaling.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/Credental.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -248,7 +211,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/enrollment.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/patient_enrollment.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -276,7 +239,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/scheduling.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/medical-scheduling.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -307,7 +270,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/reminder.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/appoiment-reminder.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -337,7 +300,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/verification.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/mediacl-verification.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -362,7 +325,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/insurance.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/medical-insurance.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -383,7 +346,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="s-about-img p-relative">
-                            <img src="assets/images/illlustration.png" alt="img">
+                            <img src="assets/images/c&s.jpg" alt="img">
 
                         </div>
                     </div>
@@ -1400,7 +1363,7 @@
 
             $("#header").owlCarousel({
                 loop: true,
-                autoplay: true,
+                // autoplay: true,
                 margin: 20,
                 nav: false,
                 autoplayTimeout: 5000,

@@ -1052,7 +1052,7 @@ color: #fff;}
 .s-about-img img {
     width: inherit;
     max-width: inherit;
-    margin-left: -397px;
+    margin-left: -60px;
 }
 .about-img {
 	margin-left: -50px;
@@ -3576,7 +3576,7 @@ select {
 	z-index: 1;
 }
 .contact-img {
-    margin-left: -400px;
+    margin-left: -75px;
 }
 
 /* 20. footer */
@@ -5111,6 +5111,7 @@ box-shadow:3px 4px 15px #3FB0CEA6;
 .img, img {
     max-width: 100%;
     transition: all 0.3s ease-out 0s;
+    border-radius: 10px;
 }
 .pro-filter select {
   border: 2px solid #eaedff;
@@ -6921,6 +6922,15 @@ border-radius: 15px;
     object-fit: cover;
     overflow: hidden;
     max-height: 420px;
+    margin-top: 8px;
+}
+
+.s-d-img img{
+    border-radius: 10px;
+}
+
+.img{
+    border-radius: 10px;
 }
 
 .department-area li {
