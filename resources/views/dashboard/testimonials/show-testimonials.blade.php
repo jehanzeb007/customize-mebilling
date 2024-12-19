@@ -29,6 +29,7 @@
                                             <tr>
                                                 <th class="text-black">S.No</th>
                                                 <th class="text-black">Name</th>
+                                                <th class="text-black">position</th>
                                                 <th class="text-black">Testimonial</th>
                                                 <th class="text-black">Image</th>
                                                 <th class="text-black text-end">Actions</th>
@@ -37,8 +38,9 @@
                                         <tbody>
                                             @foreach ($testimonials as $index => $testimonial)
                                                 <tr id="row-{{ $testimonial->id }}">
-                                                    <td>{{ $index + 1 }}</td>
+                                                    <td>{{ $index + 1}}</td>
                                                     <td>{{ $testimonial->name }}</td>
+                                                    <td>{{ $testimonial->position }}</td>
                                                     <td>{{ strip_tags($testimonial->testimonial) }}</td>
                                                     <td>
                                                         @if ($testimonial->image)

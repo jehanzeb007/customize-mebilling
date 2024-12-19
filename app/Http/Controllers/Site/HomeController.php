@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use App\Models\Slider;
 
@@ -17,4 +18,5 @@ class HomeController extends Controller
         }
         return view('sites.home.index', $data);
     }
+
 }
