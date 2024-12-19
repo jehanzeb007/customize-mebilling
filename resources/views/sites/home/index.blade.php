@@ -1215,30 +1215,36 @@
                     </div>
                 </div>
                 <div class="row">
+                    @foreach( $blogs as $index => $blog)
                     <div class="col-lg-4 col-md-12">
                         <div class="single-post mb-30">
                             <div class="blog-thumb">
                                 <a href="blog-details.html">
-                                    <img src="assets/images/blog_img01.jpg" alt="img">
-                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">
+                                    @if ($blog->image)
+                                        <img src="{{ asset('storage/' . $blog->image) }}"
+                                             alt="{{ $blog->name }}" width="50">
+                                    @else
+                                        <img src="assets/images/blog_img01.jpg" alt="img">
+                                    @endif
+
+
                                 </a>
                             </div>
                             <div class="blog-content text-center">
                                 <div class="b-meta mb-20">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
-                                            <i class="far fa-calendar-alt"></i> 7 March, 2019
+                                            <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
+
                                         </div>
                                         <div class="col-lg-6 col-md-6">
-                                            <i class="fas fa-user"></i> By Jhone Doe
+                                            <i class="fas fa-user"></i> {{$blog->author_name}}
                                         </div>
                                     </div>
                                 </div>
-                                <h4><a href="blog-details.html">Praesent justo mauris, tincidunt vitae nisi
-                                        ultricies.</a>
+                                <h4><a href="blog-details.html">{{$blog->name}}</a>
                                 </h4>
-                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,
-                                    gravida lacus.</p>
+                                <p>{{strip_tags($blog->description)}}</p>
                                 <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
                                 </div>
 
@@ -1247,66 +1253,67 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="single-post active mb-30">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html">
-                                    <img src="assets/images/blog_img02.jpg" alt="img">
-                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">
-                                </a>
+                    @endforeach
+{{--                    <div class="col-lg-4 col-md-12">--}}
+{{--                        <div class="single-post active mb-30">--}}
+{{--                            <div class="blog-thumb">--}}
+{{--                                <a href="blog-details.html">--}}
+{{--                                    <img src="assets/images/blog_img02.jpg" alt="img">--}}
+{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
+{{--                                </a>--}}
 
-                            </div>
-                            <div class="blog-content text-center">
-                                <div class="b-meta mb-20">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="far fa-calendar-alt"></i> 7 March, 2019
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="fas fa-user"></i> By Jhone Doe
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>
-                                </h4>
-                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,
-                                    gravida lacus.</p>
-                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
+{{--                            </div>--}}
+{{--                            <div class="blog-content text-center">--}}
+{{--                                <div class="b-meta mb-20">--}}
+{{--                                    <div class="row">--}}
+{{--                                        <div class="col-lg-6 col-md-6">--}}
+{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
+{{--                                        </div>--}}
+{{--                                        <div class="col-lg-6 col-md-6">--}}
+{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>--}}
+{{--                                </h4>--}}
+{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
+{{--                                    gravida lacus.</p>--}}
+{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
 
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="single-post mb-30">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html">
-                                    <img src="assets/images/blog_img03.jpg" alt="img">
-                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">
-                                </a>
-                            </div>
-                            <div class="blog-content text-center">
-                                <div class="b-meta mb-20">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="far fa-calendar-alt"></i> 7 March, 2019
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="fas fa-user"></i> By Jhone Doe
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>
-                                </h4>
-                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,
-                                    gravida lacus.</p>
-                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-4 col-md-12">--}}
+{{--                        <div class="single-post mb-30">--}}
+{{--                            <div class="blog-thumb">--}}
+{{--                                <a href="blog-details.html">--}}
+{{--                                    <img src="assets/images/blog_img03.jpg" alt="img">--}}
+{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                            <div class="blog-content text-center">--}}
+{{--                                <div class="b-meta mb-20">--}}
+{{--                                    <div class="row">--}}
+{{--                                        <div class="col-lg-6 col-md-6">--}}
+{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
+{{--                                        </div>--}}
+{{--                                        <div class="col-lg-6 col-md-6">--}}
+{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>--}}
+{{--                                </h4>--}}
+{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
+{{--                                    gravida lacus.</p>--}}
+{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                        </div>
-                    </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
                     <div class="" style="padding-left: 480px">
                         <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
                             data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
