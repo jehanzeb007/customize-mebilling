@@ -12,12 +12,13 @@ return new class extends Migration {
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('data_key'); 
-            $table->text('data_value')->change(); // Change to 'TEXT' type
+            $table->string('data_key');
+            $table->text('data_value')->nullable();
+            $table->string('type');
             $table->timestamps();
         });
-        
-        
+
+
     }
 
     /**

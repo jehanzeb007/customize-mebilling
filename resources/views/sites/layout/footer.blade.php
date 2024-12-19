@@ -10,7 +10,7 @@
                             <a href="#"><img src="{{asset('assets/images/logo.png')}}" alt="logo"></a>
                         </div>
                         <div class="footer-text mb-20">
-                            <p>We are an organization that focuses on delivering full solutions tailored to our client's various Revenue Cycle operations. We currently service clients located in Texas, Louisiana, Arkansas, Oklahoma, Alabama, and New Jersey.</p>
+                            <p> {{ $footerText }} </p>
                         </div>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
