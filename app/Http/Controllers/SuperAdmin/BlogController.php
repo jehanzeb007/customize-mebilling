@@ -49,6 +49,7 @@ class BlogController extends Controller
         $slug = generateUniqueSlug($request->name, Blog::class);
 
         Blog::create([
+            'author_name' => $request->input('author_name'),
             'name' => $request->input('name'),
             'slug' => $slug,
             'description' => $request->input('description'),

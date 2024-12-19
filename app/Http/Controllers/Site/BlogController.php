@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -12,6 +13,9 @@ class BlogController extends Controller
         $data = [];
         $data["heading"] = "Blog";
         $data["breadcrumb"] = "blog";
-        return view("sites.blogs.index", $data);
+
+        $blogs = Blog::paginate(3);
+
+        return view("sites.blogs.index", $data,compact('blogs'));
     }
 }
