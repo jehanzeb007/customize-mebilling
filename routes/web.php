@@ -1,10 +1,8 @@
 <?php
 
-use App\Http\Controllers\LoginController;
+
 use App\Http\Controllers\Site\ContactUsController;
-use App\Http\Controllers\SuperAdmin\ImageUploadController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SuperAdmin\DashboardController;
 use App\Http\Controllers\Site\HomeController;
 use App\Http\Controllers\Site\BillingController;
 use App\Http\Controllers\Site\BlogController as SiteBlogController;
@@ -24,10 +22,8 @@ use App\Http\Controllers\Site\BlogController as SiteBlogController;
 require __DIR__ . '/auth.php';
 
 
-
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
-    require __DIR__ . '/abdullah.php';
-    require __DIR__ . '/wahab.php';
+    require __DIR__ . '/dashboard.php';
 });
 
 Route::get('/', [HomeController::class,'index'])->name('home');

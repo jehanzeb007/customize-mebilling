@@ -3,6 +3,8 @@
 @section('breadcrumb', $breadcrumb)
 
 @section('content')
+
+
     <section class="pt-5">
         <div class="container">
 
@@ -10,8 +12,8 @@
                 <span>Specialties</span>
             </div> --}}
 
-            <div class="row">
-                <div>
+
+
                     <p>
                         If you run a micro hospital, you may face many issues, such as losing a considerable portion of
                         revenue in denials and eligibility issues.
@@ -22,8 +24,7 @@
                         reduction in A/R days, which results in an error-free and smooth revenue cycle.
                     </p>
 
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -51,8 +52,7 @@
     <section >
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-12">
+
 
                         <h2>Revenue Cycle Management for Micro Hospitals
                         </h2>
@@ -65,7 +65,7 @@
                     </p>
 
                 </div>
-            </div>
-        </div>
+
     </section>
+
 @endsection

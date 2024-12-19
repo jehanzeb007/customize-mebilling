@@ -543,7 +543,7 @@ li {
 
 .rotate-img{
     animation: slowRotate 50s linear infinite;
-    margin-top: 120px;
+    /*margin-top: 120px;*/
 }
 
 /* Keyframes for rotation */

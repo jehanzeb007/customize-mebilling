@@ -2,11 +2,12 @@
 @section('content')
     <div class="default-height">
         <div class="container-fluid">
-            <div class="page-titles">
+            <div class="page-titles d-flex align-items-center justify-content-between">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">CMS</a></li>
-                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Sliders</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Slider</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Content</a></li>
                 </ol>
+                <a href="{{ route('admin.slider.addslider') }}" class="btn btn-primary">Add Content</a>
             </div>
             <!-- Row -->
             <div class="row">

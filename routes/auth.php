@@ -4,7 +4,7 @@ use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 // Login and Dashboard Routes
-Route::get('admin/login', [LoginController::class, 'showLoginForm'])->name('auth.login');
+Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('auth.login');
 Route::post('/login', [LoginController::class, 'login'])->name('auth.login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('auth.logout');
 
