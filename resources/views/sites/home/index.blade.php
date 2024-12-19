@@ -940,56 +940,57 @@
                     </div>
                     <div>
                         <!-- FAQ Item 1 -->
+                        @foreach($faqs as $index => $faq)
                         <div class="faq-item">
                             <div class="faq-question">
-                                <span>Aliquam varius ligula nec leo tempus porta.</span>
+                                <span>{{$faq->question}}</span>
                                 <i class="faq-icon eye-toggle"></i>
                             </div>
                             <div class="faq-answer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
+                                <p>{{$faq->answer}}</p>
                             </div>
                         </div>
+                        @endforeach
 
                         <!-- FAQ Item 2 -->
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>
-                            </div>
-                        </div>
+{{--                        <div class="faq-item">--}}
+{{--                            <div class="faq-question">--}}
+{{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+{{--                                <i class="faq-icon eye-toggle"></i>--}}
+{{--                            </div>--}}
+{{--                            <div class="faq-answer">--}}
+{{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="faq-item">--}}
+{{--                            <div class="faq-question">--}}
+{{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+{{--                                <i class="faq-icon eye-toggle"></i>--}}
+{{--                            </div>--}}
+{{--                            <div class="faq-answer">--}}
+{{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                        <!-- FAQ Item 3 -->
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Aliquam aliquet purus eget lacus pretium.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Aliquam aliquet purus eget lacus pretium.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>
-                            </div>
-                        </div>
+{{--                        <!-- FAQ Item 3 -->--}}
+{{--                        <div class="faq-item">--}}
+{{--                            <div class="faq-question">--}}
+{{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+{{--                                <i class="faq-icon eye-toggle"></i>--}}
+{{--                            </div>--}}
+{{--                            <div class="faq-answer">--}}
+{{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="faq-item">--}}
+{{--                            <div class="faq-question">--}}
+{{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+{{--                                <i class="faq-icon eye-toggle"></i>--}}
+{{--                            </div>--}}
+{{--                            <div class="faq-answer">--}}
+{{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
 
