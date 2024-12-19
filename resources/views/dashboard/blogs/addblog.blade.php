@@ -118,11 +118,21 @@
 
                                 <!-- Blog Name Field -->
                                 <div class="mb-3">
+                                    <label class="form-label">Author Name</label>
+                                    <input type="text" name="author_name" value="{{ old('name', $blog->author_name ?? '') }}"
+                                        class="form-control w-100" placeholder="Name">
+                                    @error('auhtor_name')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+
+                                <!-- Author Name -->
+                                <div class="mb-3">
                                     <label class="form-label">Name</label>
                                     <input type="text" name="name" value="{{ old('name', $blog->name ?? '') }}"
-                                        class="form-control w-100" placeholder="Name">
+                                           class="form-control w-100" placeholder="Name">
                                     @error('name')
-                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
 
