@@ -8,7 +8,7 @@
                     <div class="col-6 col-lg-2">
                         <div class="logo">
                             <a href="{{ route('home') }}">
-                                <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
+                                <img src="{{ asset('storage/' . $logoPath) }}" alt="logo">
                             </a>
                         </div>
                     </div>

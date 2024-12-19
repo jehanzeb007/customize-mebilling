@@ -24,9 +24,9 @@ class AppServiceProvider extends ServiceProvider
             $setting = null;
         }
 
-        $siteName = $settings['site_name']->data_value ?? 'Dev & Design Dashboard'; // Default site name
-        $footerText = $settings['footer_text']->data_value ?? 'footer text';
-        $logoPath = $settings['logo']->data_value ?? config('site.default_logo');
+        $siteName = $settings['site_name']->data_value ?? 'Site Name'; // Default site name
+        $footerText = $settings['footer_text']->data_value ?? 'Footer Text';
+        $logoPath = $settings['logo']->data_value ?? 'logo';
         $metaTitle = $settings['meta_title']->data_value ?? config('app.name'); // Default to app name
         $metaDescription = $settings['meta_description']->data_value ?? 'Default description for your application.';
 
