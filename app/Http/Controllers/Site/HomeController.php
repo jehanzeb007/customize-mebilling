@@ -23,7 +23,7 @@ class HomeController extends Controller
 
         $blogs = Blog::paginate(5);
 
-        $faqs = Faq::paginate(5);
+        $faqs = Faq::paginate(10);
 
         return view('sites.home.index', $data ,compact('testimonials','blogs','faqs'));
 
