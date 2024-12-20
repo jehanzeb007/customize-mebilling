@@ -4,32 +4,72 @@
     <main>
         <!-- slider-area -->
         {{-- <section id="home" class="slider-area p-relative p-0"> --}}
+{{--        <section id="home" class="slider-area fix p-relative mb-5">--}}
+{{--            <div class="video">--}}
+{{--                <iframe--}}
+{{--                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">--}}
+{{--                </iframe>--}}
+{{--            </div>--}}
+
+{{--                <div id="slider-active2">--}}
+
+{{--                         style="background-image:url(img/an-bg/header-bg.png)">--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="row align-items-center">--}}
+{{--                                <div class="col-lg-6">--}}
+{{--                                    <div class="slider-content s-slider-content text-left">--}}
+{{--                                        <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than--}}
+{{--                                            <span>Billing</span></h2>--}}
+{{--                                        <p data-animation="fadeInUp" data-delay=".6s">--}}
+{{--                                            Enhance Your Revenue , Empower Your Profit</p>--}}
+{{--                                        <div class="slider-btn mt-25">--}}
+{{--                                            <a href="{{ asset('/about_us') }}" class="btn ss-btn"--}}
+{{--                                               data-animation="fadeInRight"--}}
+{{--                                               data-delay=".8s">Learn More <i class="fas fa-chevron-right"></i></a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+
+
+{{--        </section>--}}
+
+        <!-- Header Section with YouTube Video Background -->
         <section id="home" class="slider-area fix p-relative mb-5">
+            <!-- YouTube Video Background -->
+            <div class="video-background">
+                <iframe
+                    src="https://www.youtube.com/embed/U91AUYttTyc?autoplay=1&mute=1&loop=1&playlist=U91AUYttTyc&controls=0&showinfo=0&modestbranding=1&rel=0"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-            <div class="slider-active2">
-                <div class="single-slider slider-bg d-flex align-items-center"
-                    style="background-image:url(img/an-bg/header-bg.png)">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="slider-content s-slider-content text-left">
-                                    <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than <span>Billing</span></h2>
-                                    <p data-animation="fadeInUp" data-delay=".6s">
-                                        Enhance Your Revenue , Empower Your Profit</p>
-                                    <div class="slider-btn mt-25">
-                                        <a href="{{ asset('/about_us') }}" class="btn ss-btn" data-animation="fadeInRight"
-                                            data-delay=".8s">Learn More <i class="fas fa-chevron-right"></i></a>
-                                    </div>
+            <!-- Content Overlay -->
+            <div class="slider-content-overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="slider-content text-left">
+                                <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than Billing</h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">Enhance Your Revenue, Empower Your Profit</p>
+                                <div class="slider-btn mt-25">
+                                    <a href="{{ asset('/about_us') }}" class="btn ss-btn">Learn More <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="col-lg-12">
-                                    <img src="assets/images/header-img.png" alt="header-img"
-                                         class="header-img" />
-                                </div>
-                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
         </section>
+
+
 
         <!-- slider-area-end -->
 
@@ -89,7 +129,35 @@
                 </div>
             </div>
             {{-- </div> --}}
-        </section><br>
+        </section>
+        <br>
+
+        <!-- Hippa Section -->
+
+        <section>
+            <div class="container mt-5 hipaa">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mt-5">
+                            <img src="{{asset('assets/images/hippa.png')}}">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>100% HIPAA Compliant Infrastructure</h3>
+                        <p>Protecting patient data is at the core of our operations. Our medical billing platform is
+                            built on a secure, HIPAA-compliant infrastructure designed to safeguard sensitive health
+                            information at every stage. From encrypted data transmission to secure storage and access
+                            controls, we implement robust measures to ensure compliance with federal regulations and
+                            industry standards. Our commitment to data security not only protects your practice from
+                            breaches and penalties but also fosters trust with your patients. With a solid foundation of
+                            compliance and security, you can focus on delivering quality care while we handle your
+                            revenue cycle with precision and integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hippa Section -->
 
         <!-- main-area-end -->
 
@@ -121,7 +189,8 @@
 
                             <li class="align-items-center points">
                                 <div class="icon">
-                                    <div><img src=" {{ asset('assets/images/analytics-icon.png') }}" alt="de-icon"></div>
+                                    <div><img src=" {{ asset('assets/images/analytics-icon.png') }}" alt="de-icon">
+                                    </div>
                                 </div>
                                 <div class="text">
                                     <h2 class="mb-0">Killer Analytics</h2>
@@ -553,7 +622,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="1">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-1">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -576,7 +645,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="2">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-2">
                                         <img src="{{ asset('assets/images/analysis-icon.png') }}" alt="">
@@ -604,7 +673,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="3">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-3">
                                         <img src="{{ asset('assets/images/planning-icon.png') }}" alt="">
@@ -627,7 +696,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="4">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-4">
                                         <img src="{{ asset('assets/images/implementation-icon.png') }}" alt="">
@@ -650,7 +719,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="5">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-5">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -674,7 +743,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="6">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-6">
                                         <img src="{{ asset('assets/images/improvement-icon.png') }}" alt="">
@@ -705,7 +774,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="1">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-1">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -728,7 +797,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="2">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-2">
                                         <img src="{{ asset('assets/images/analysis-icon.png') }}" alt="">
@@ -751,7 +820,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="3">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-3">
                                         <img src="{{ asset('assets/images/planning-icon.png') }}" alt="">
@@ -778,7 +847,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="4">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-4">
                                         <img src="{{ asset('assets/images/implementation-icon.png') }}" alt="">
@@ -801,7 +870,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="5">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-5">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -825,7 +894,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="6">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-6">
                                         <img src="{{ asset('assets/images/improvement-icon.png') }}" alt="">
@@ -878,22 +947,23 @@
                                             @if ($testimonial->image)
                                                 {{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}" --}}
                                                 {{--                                             alt="{{ $testimonial->name }}" width="50"> --}}
-                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
-                                                    width="50">
+                                                <img src="{{ asset($testimonial->image) }}"
+                                                     alt="{{ $testimonial->name }}"
+                                                     width="50">
                                             @else
-                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
-                                                    width="50">
+                                                <img src="{{ asset($testimonial->image) }}"
+                                                     alt="{{ $testimonial->name }}"
+                                                     width="50">
 
 
                                                 {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" /> --}}
                                             @endif
 
 
-
                                         </div>
                                         <div class="single-testimonial-bg">
                                             <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                                    alt="img"></div>
+                                                                       alt="img"></div>
                                             <div class="testi-author">
                                                 <div class="ta-info">
                                                     <h6>{{ $testimonial->name }}</h6>
@@ -941,56 +1011,56 @@
                     <div>
                         <!-- FAQ Item 1 -->
                         @foreach($faqs as $index => $faq)
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>{{$faq->question}}</span>
-                                <i class="faq-icon eye-toggle"></i>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>{{$faq->question}}</span>
+                                    <i class="faq-icon eye-toggle"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>{{$faq->answer}}</p>
+                                </div>
                             </div>
-                            <div class="faq-answer">
-                                <p>{{$faq->answer}}</p>
-                            </div>
-                        </div>
                         @endforeach
 
                         <!-- FAQ Item 2 -->
-{{--                        <div class="faq-item">--}}
-{{--                            <div class="faq-question">--}}
-{{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
-{{--                                <i class="faq-icon eye-toggle"></i>--}}
-{{--                            </div>--}}
-{{--                            <div class="faq-answer">--}}
-{{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="faq-item">--}}
-{{--                            <div class="faq-question">--}}
-{{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
-{{--                                <i class="faq-icon eye-toggle"></i>--}}
-{{--                            </div>--}}
-{{--                            <div class="faq-answer">--}}
-{{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
 
-{{--                        <!-- FAQ Item 3 -->--}}
-{{--                        <div class="faq-item">--}}
-{{--                            <div class="faq-question">--}}
-{{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
-{{--                                <i class="faq-icon eye-toggle"></i>--}}
-{{--                            </div>--}}
-{{--                            <div class="faq-answer">--}}
-{{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="faq-item">--}}
-{{--                            <div class="faq-question">--}}
-{{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
-{{--                                <i class="faq-icon eye-toggle"></i>--}}
-{{--                            </div>--}}
-{{--                            <div class="faq-answer">--}}
-{{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                        <!-- FAQ Item 3 -->--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
                     </div>
                 </div>
 
@@ -1170,7 +1240,7 @@
 
         <!-- blog-area -->
         <section id="blog" class="blog-area  p-relative pt-5 pb-0 fix"
-            style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
+                 style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
@@ -1184,107 +1254,107 @@
                 </div>
                 <div class="row">
                     @foreach( $blogs as $index => $blog)
-                    <div class="col-lg-4 col-md-12">
-                        <div class="single-post mb-30">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html">
-                                    @if ($blog->image)
-                                        <img src="{{ asset('storage/' . $blog->image) }}"
-                                             alt="{{ $blog->name }}" width="50">
-                                    @else
-                                        <img src="assets/images/blog_img01.jpg" alt="img">
-                                    @endif
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html">
+                                        @if ($blog->image)
+                                            <img src="{{ asset('storage/' . $blog->image) }}"
+                                                 alt="{{ $blog->name }}" width="50">
+                                        @else
+                                            <img src="assets/images/blog_img01.jpg" alt="img">
+                                        @endif
 
 
-                                </a>
-                            </div>
-                            <div class="blog-content text-center">
-                                <div class="b-meta mb-20">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
+                                    </a>
+                                </div>
+                                <div class="blog-content text-center">
+                                    <div class="b-meta mb-20">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
 
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="fas fa-user"></i> {{$blog->author_name}}
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="fas fa-user"></i> {{$blog->author_name}}
+                                            </div>
                                         </div>
                                     </div>
+                                    <h4><a href="blog-details.html">{{$blog->name}}</a>
+                                    </h4>
+                                    <p>{{strip_tags($blog->description)}}</p>
+                                    <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+
                                 </div>
-                                <h4><a href="blog-details.html">{{$blog->name}}</a>
-                                </h4>
-                                <p>{{strip_tags($blog->description)}}</p>
-                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
-                                </div>
+
 
                             </div>
-
-
                         </div>
-                    </div>
                     @endforeach
-{{--                    <div class="col-lg-4 col-md-12">--}}
-{{--                        <div class="single-post active mb-30">--}}
-{{--                            <div class="blog-thumb">--}}
-{{--                                <a href="blog-details.html">--}}
-{{--                                    <img src="assets/images/blog_img02.jpg" alt="img">--}}
-{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-{{--                                </a>--}}
+                    {{--                    <div class="col-lg-4 col-md-12">--}}
+                    {{--                        <div class="single-post active mb-30">--}}
+                    {{--                            <div class="blog-thumb">--}}
+                    {{--                                <a href="blog-details.html">--}}
+                    {{--                                    <img src="assets/images/blog_img02.jpg" alt="img">--}}
+                    {{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
+                    {{--                                </a>--}}
 
-{{--                            </div>--}}
-{{--                            <div class="blog-content text-center">--}}
-{{--                                <div class="b-meta mb-20">--}}
-{{--                                    <div class="row">--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-{{--                                        </div>--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>--}}
-{{--                                </h4>--}}
-{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-{{--                                    gravida lacus.</p>--}}
-{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                    {{--                            </div>--}}
+                    {{--                            <div class="blog-content text-center">--}}
+                    {{--                                <div class="b-meta mb-20">--}}
+                    {{--                                    <div class="row">--}}
+                    {{--                                        <div class="col-lg-6 col-md-6">--}}
+                    {{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
+                    {{--                                        </div>--}}
+                    {{--                                        <div class="col-lg-6 col-md-6">--}}
+                    {{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
+                    {{--                                        </div>--}}
+                    {{--                                    </div>--}}
+                    {{--                                </div>--}}
+                    {{--                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>--}}
+                    {{--                                </h4>--}}
+                    {{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
+                    {{--                                    gravida lacus.</p>--}}
+                    {{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
+                    {{--                                </div>--}}
+                    {{--                            </div>--}}
 
 
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-4 col-md-12">--}}
-{{--                        <div class="single-post mb-30">--}}
-{{--                            <div class="blog-thumb">--}}
-{{--                                <a href="blog-details.html">--}}
-{{--                                    <img src="assets/images/blog_img03.jpg" alt="img">--}}
-{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content text-center">--}}
-{{--                                <div class="b-meta mb-20">--}}
-{{--                                    <div class="row">--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-{{--                                        </div>--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>--}}
-{{--                                </h4>--}}
-{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-{{--                                    gravida lacus.</p>--}}
-{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="col-lg-4 col-md-12">--}}
+                    {{--                        <div class="single-post mb-30">--}}
+                    {{--                            <div class="blog-thumb">--}}
+                    {{--                                <a href="blog-details.html">--}}
+                    {{--                                    <img src="assets/images/blog_img03.jpg" alt="img">--}}
+                    {{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
+                    {{--                                </a>--}}
+                    {{--                            </div>--}}
+                    {{--                            <div class="blog-content text-center">--}}
+                    {{--                                <div class="b-meta mb-20">--}}
+                    {{--                                    <div class="row">--}}
+                    {{--                                        <div class="col-lg-6 col-md-6">--}}
+                    {{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
+                    {{--                                        </div>--}}
+                    {{--                                        <div class="col-lg-6 col-md-6">--}}
+                    {{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
+                    {{--                                        </div>--}}
+                    {{--                                    </div>--}}
+                    {{--                                </div>--}}
+                    {{--                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>--}}
+                    {{--                                </h4>--}}
+                    {{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
+                    {{--                                    gravida lacus.</p>--}}
+                    {{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
+                    {{--                                </div>--}}
+                    {{--                            </div>--}}
 
-{{--                        </div>--}}
-{{--                    </div>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
                     <div class="" style="padding-left: 480px">
                         <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
-                            data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
+                           data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
                     </div>
 
                 </div>
@@ -1297,7 +1367,7 @@
 
 @push('js')
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
 
             // Select all FAQ questions
@@ -1318,9 +1388,6 @@
                     }
                 });
             });
-
-
-
 
 
             const processSection = document.getElementById("processSection");
@@ -1392,10 +1459,10 @@
                 smartSpeed: 1000,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
-                onTranslate: function() {
+                onTranslate: function () {
                     $(".owl-item").removeClass("fade-in-up").addClass("fade-out-up inactive");
                 },
-                onTranslated: function() {
+                onTranslated: function () {
                     $(".owl-item.active").removeClass("fade-out-up inactive").addClass("fade-in-up");
                 },
 

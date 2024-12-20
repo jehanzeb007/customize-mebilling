@@ -389,9 +389,10 @@ margin-left: 0px;
 	display: block;
 	color: #013243;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	/*font-weight: 500;*/
 	padding: 7px 0;
 	position: relative;
+    font-size: 14px;
 }
 
 .menu-area{
@@ -454,10 +455,6 @@ color: #191D3B;
 .responsive {display: none;}
 #mobile-menu {
 	display: block;
-}
-.menu-area {
-    background: #fff;
-    box-shadow: 3px 4px 15px #00000026;
 }
 /* .menu-area::before {
    content: "";
@@ -927,7 +924,7 @@ color: #FFF;
 	content: none;
 }
 .slider-btn .btn {
-	box-shadow: 3px 3px 0 0 #1E0B9B;
+	/*box-shadow: 3px 3px 0 0 #1E0B9B;*/
 }
 .slider-btn .btn:hover{box-shadow: none;}
 .p-relative{position: relative;}
@@ -996,7 +993,7 @@ color: #FFF;
 }
 .btn.ss-btn {
 background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
-box-shadow: 3px 4px 15px #3FB0CEA6;
+/*box-shadow: 3px 4px 15px #3FB0CEA6;*/
 padding: 14px 15px 14px 30px;
 width: 176px;
 float: left;
@@ -3577,6 +3574,10 @@ select {
 }
 .contact-img {
     margin-left: -75px;
+}
+
+.hipaa{
+    margin-bottom: 5rem;
 }
 
 /* 20. footer */
@@ -7601,6 +7602,15 @@ p {
     display: none;
 }
 
+/*.slider-active2{*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    color: #f1f1f1;*/
+/*    width: 100%;*/
+/*    padding: 20px;*/
+/*}*/
+
 .border-container {
     width: 274px !important;
     height: 232px !important;
@@ -7814,9 +7824,7 @@ p {
     background-color: #eec6c6;
 }
 
-.slider-area{
-    background-image: url('../images/header-bg.png');
-}
+
 
 /* FAQ Section Styles */
 .faq-card {
@@ -7959,3 +7967,59 @@ a {
     }
 }
 
+#home {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.slider-area .slider-content-overlay {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    /*margin-top: 12rem;*/
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-area .slider-content-overlay .slider-content h2, .slider-area .slider-content-overlay .slider-content p{
+    color: white !important;
+}
+
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 3;
+}
+
+.main-menu ul li a {
+    color: #fff; /* Adjust for visibility over video */
+}
