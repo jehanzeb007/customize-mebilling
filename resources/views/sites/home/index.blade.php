@@ -43,7 +43,7 @@
             <!-- YouTube Video Background -->
             <div class="video-background">
                 <iframe
-                    src="https://www.youtube.com/embed/U91AUYttTyc?autoplay=1&mute=1&loop=1&playlist=U91AUYttTyc&controls=0&showinfo=0&modestbranding=1&rel=0"
+                    src="https://www.youtube.com/embed/FjR3BjvRrpo?autoplay=1&mute=1&loop=1&playlist=FjR3BjvRrpo&controls=0&showinfo=0&modestbranding=1&rel=0"
                     frameborder="0"
                     allow="autoplay; fullscreen"
                     allowfullscreen>
@@ -56,8 +56,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="slider-content text-left">
-                                <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than Billing</h2>
-                                <p data-animation="fadeInUp" data-delay=".6s">Enhance Your Revenue, Empower Your Profit</p>
+                                <h2 data-animation="fadeInUp" data-delay=".4s">At MeBillings, we Simplify Care and Amplify Revenue by up to 25%</h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">Enhance your practice's revenue, reduce billing errors, and speed up reimbursements with MeBillings' advanced AI-driven medical billing solutions.</p>
                                 <div class="slider-btn mt-25">
                                     <a href="{{ asset('/about_us') }}" class="btn ss-btn">Learn More <i class="fas fa-chevron-right"></i></a>
                                 </div>
@@ -135,7 +135,9 @@
         <!-- Hippa Section -->
 
         <section>
+            <div class="hipaa-bg">
             <div class="container mt-5 hipaa">
+                <div class="inner">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="mt-5">
@@ -154,6 +156,8 @@
                             revenue cycle with precision and integrity.</p>
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -1292,66 +1296,7 @@
                             </div>
                         </div>
                     @endforeach
-                    {{--                    <div class="col-lg-4 col-md-12">--}}
-                    {{--                        <div class="single-post active mb-30">--}}
-                    {{--                            <div class="blog-thumb">--}}
-                    {{--                                <a href="blog-details.html">--}}
-                    {{--                                    <img src="assets/images/blog_img02.jpg" alt="img">--}}
-                    {{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-                    {{--                                </a>--}}
 
-                    {{--                            </div>--}}
-                    {{--                            <div class="blog-content text-center">--}}
-                    {{--                                <div class="b-meta mb-20">--}}
-                    {{--                                    <div class="row">--}}
-                    {{--                                        <div class="col-lg-6 col-md-6">--}}
-                    {{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="col-lg-6 col-md-6">--}}
-                    {{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-                    {{--                                        </div>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>--}}
-                    {{--                                </h4>--}}
-                    {{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-                    {{--                                    gravida lacus.</p>--}}
-                    {{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-
-
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="col-lg-4 col-md-12">--}}
-                    {{--                        <div class="single-post mb-30">--}}
-                    {{--                            <div class="blog-thumb">--}}
-                    {{--                                <a href="blog-details.html">--}}
-                    {{--                                    <img src="assets/images/blog_img03.jpg" alt="img">--}}
-                    {{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-                    {{--                                </a>--}}
-                    {{--                            </div>--}}
-                    {{--                            <div class="blog-content text-center">--}}
-                    {{--                                <div class="b-meta mb-20">--}}
-                    {{--                                    <div class="row">--}}
-                    {{--                                        <div class="col-lg-6 col-md-6">--}}
-                    {{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="col-lg-6 col-md-6">--}}
-                    {{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-                    {{--                                        </div>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>--}}
-                    {{--                                </h4>--}}
-                    {{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-                    {{--                                    gravida lacus.</p>--}}
-                    {{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
                     <div class="" style="padding-left: 480px">
                         <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
                            data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
@@ -1361,6 +1306,64 @@
             </div>
         </section>
         <!-- blog-area-end -->
+
+        <section>
+            <section id="pricing" class="pricing-area pb-0 mt-5">
+                <div class="container">
+
+
+                    <div class="exceptional-wrapper" >
+                        <div class="container-fluid p-0">
+                            <div class="inner">
+
+
+
+                                <div class="owl-carousel exceptional-owl owl-theme owl-loaded owl-drag brand">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage"
+                                             style="transform: translate3d(-1324px, 0px, 0px); transition: all; width: 4635px;">
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand5.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand6.png" alt="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </section>
 
     </main>
 @endsection
@@ -1437,6 +1440,16 @@
                 autoplayTimeout: 5000,
                 items: 1,
                 smartSpeed: 1000,
+            });
+
+            $(".brand").owlCarousel({
+                loop: true,
+                autoplay: true,
+                margin: 20,
+                nav: false,
+                autoplayTimeout: 3000,
+                items: 4,
+                smartSpeed: 10000,
             });
 
             $("#testimonial").owlCarousel({
