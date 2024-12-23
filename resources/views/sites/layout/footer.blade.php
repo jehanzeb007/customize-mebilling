@@ -10,7 +10,7 @@
                             <a href="#"><img src="{{ asset('storage/' . $logoPath ) }}" alt="logo"></a>
                         </div>
                         <div class="footer-text mb-20">
-                            <p> {{ $footerText }} </p>
+                            <p>footerText </p>
                         </div>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -98,5 +98,11 @@
         </div>
     </div>
 </footer> --}}
+@php
+    $footerText = str_replace("@{siteLogo}", asset('storage/' . $logoPath), $footerText);
+    $footerText = str_replace("@{sitePhone}", $sitePhone, $footerText);
+    $footerText = str_replace("@{siteEmail}", $siteEmail, $footerText);
+    $footerText = str_replace("@{siteAddress}", $siteAddress, $footerText);
+@endphp
 
 {!! $footerText !!}

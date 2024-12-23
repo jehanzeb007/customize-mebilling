@@ -105,7 +105,7 @@ class SettingController extends Controller
 
         foreach ($inputFields as $key => $value) {
 
-            if (is_string($value) && $key !== '_token' && $key !== 'type') {
+            if ($key !== '_token' && $key !== 'type') {
                 Setting::updateOrCreate(
                     ['key' => $key, 'type' => 'contact setting'],
                     ['value' => $value]

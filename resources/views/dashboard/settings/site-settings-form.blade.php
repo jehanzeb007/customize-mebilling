@@ -205,20 +205,6 @@
     });
 
 
-    //     ClassicEditor
-    //     .create(document.querySelector('#editor'), {
-    //     toolbar: [
-    //         'sourceEditing','heading', '|',
-    //         'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|',
-    //         'imageUpload', 'blockQuote', 'insertTable', 'undo', 'redo'
-    //     ],
-    //     ckfinder: {
-    //         uploadUrl: '{{ route('admin.media.uploadimages') }}?_token={{ csrf_token() }}'
-    //     },
-    // })
-    // .catch(error => {
-    //     console.error(error);
-    // });
     </script>
 
     <script>
