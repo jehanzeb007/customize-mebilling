@@ -9,5 +9,5 @@ class Setting extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['data_key', 'data_value', 'type']; // Add 'type' to fillable fields
+    protected $fillable = ['key', 'value', 'type']; // Add 'type' to fillable fields
 }

@@ -223,10 +223,10 @@
     </div>
 @endsection
 @push('js')
-    <script src="{{ asset('assets/js/dashboard/cms.js') }}"></script>
-    <script src="{{ asset('assets/vendor/select2/js/select2.full.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins-init/select2-init.js') }}"></script>
-    <script src="{{ asset('assets/vendor/ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/dashboard/cms.js') }}"></script>
+    <script src="{{ asset('admin-assets/vendor/select2/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/plugins-init/select2-init.js') }}"></script>
+    <script src="{{ asset('admin-assets/vendor/ckeditor/ckeditor.js') }}"></script>
 
     <script>
         ClassicEditor.create(document.querySelector('#editor1'))

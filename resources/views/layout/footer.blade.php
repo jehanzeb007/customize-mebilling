@@ -1,5 +1,10 @@
+<?php
+
+?>
 <footer class="footer">
     <div class="copyright">
-        <p>{{ $footerText ?? 'Default footer text' }}</p>
+        <p>{!! $footerText ?? 'Default footer text' !!}</p>
     </div>
 </footer>
+
+

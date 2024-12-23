@@ -69,16 +69,16 @@
                                             @foreach ($currentSettings as $index => $setting)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
-                                                    <td>{{ ucwords(str_replace('_', ' ', $setting->data_key)) }}</td>
+                                                    <td>{{ ucwords(str_replace('_', ' ', $setting->key)) }}</td>
                                                     <td>
-                                                        <!-- Check if the data_value is an image URL or path -->
-                                                        @if (preg_match('/\.(jpg|jpeg|png|gif)$/i', $setting->data_value))
-                                                            <!-- Display the image if data_value is a valid image path -->
-                                                            <img src="{{ asset('storage/' . $setting->data_value) }}"
+                                                        <!-- Check if the value is an image URL or path -->
+                                                        @if (preg_match('/\.(jpg|jpeg|png|gif)$/i', $setting->value))
+                                                            <!-- Display the image if value is a valid image path -->
+                                                            <img src="{{ asset('storage/' . $setting->value) }}"
                                                                 alt="Image" style="width: 100px; height: auto;">
                                                         @else
                                                             <!-- Otherwise, display the text value -->
-                                                            {{ $setting->data_value }}
+                                                            {{ $setting->value }}
                                                         @endif
                                                     </td>
                                                 </tr>
@@ -88,7 +88,13 @@
                                 </div>
                                 <div class="text-end mb-3">
                                     <a href="{{ route('admin.settings.settingpage') }}" class="btn btn-primary"
-                                        type="submit">Edit Settings</a>
+                                        type="submit">
+                                        @if ($currentSettings->count() > 0)
+                                            Edit Settings
+                                        @else
+                                            Add Settings
+                                        @endif
+                                    </a>
                                 </div>
                             </div>
                         </div>

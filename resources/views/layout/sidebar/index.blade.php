@@ -67,7 +67,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{{ route('admin.settings.settingpagelist') }}">Site Settings</a></li>
-                    <li><a href="{{ route('admin.settings.contactlist') }}">Content us</a></li>
+                    <li><a href="{{ route('admin.settings.contactlist') }}">Contact info</a></li>
                 </ul>
 
 

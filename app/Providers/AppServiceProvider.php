@@ -19,16 +19,16 @@ class AppServiceProvider extends ServiceProvider
 
         \Schema::defaultStringLength(191);
         if (\Schema::hasTable('settings')) {
-            $settings = Setting::whereIn('data_key', ['site_name', 'footer_text', 'logo', 'meta_title', 'meta_description'])->get()->keyBy('data_key');
+            $settings = Setting::whereIn('key', ['site_name', 'footer_text', 'logo', 'meta_title', 'meta_description'])->get()->keyBy('key');
         } else {
             $setting = null;
         }
 
-        $siteName = $settings['site_name']->data_value ?? 'Site Name'; // Default site name
-        $footerText = $settings['footer_text']->data_value ?? 'Footer Text';
-        $logoPath = $settings['logo']->data_value ?? 'logo';
-        $metaTitle = $settings['meta_title']->data_value ?? config('app.name'); // Default to app name
-        $metaDescription = $settings['meta_description']->data_value ?? 'Default description for your application.';
+        $siteName = $settings['site_name']->value ?? 'Site Name'; // Default site name
+        $footerText = $settings['footer_text']->value ?? 'Footer Text';
+        $logoPath = $settings['logo']->value ?? 'logo';
+        $metaTitle = $settings['meta_title']->value ?? config('app.name'); // Default to app name
+        $metaDescription = $settings['meta_description']->value ?? 'Default description for your application.';
 
         // Share globally
         View::share('siteName', $siteName);

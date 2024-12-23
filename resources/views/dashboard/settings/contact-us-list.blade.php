@@ -72,10 +72,10 @@
                                                     <td>{{ $loop->iteration }}</td>
 
                                                     <!-- Title (formatted) -->
-                                                    <td>{{ ucwords(str_replace('_', ' ', $setting->data_key)) }}</td>
+                                                    <td>{{ ucwords(str_replace('_', ' ', $setting->key)) }}</td>
 
                                                     <!-- Value -->
-                                                    <td>{{ $setting->data_value }}</td>
+                                                    <td>{{ $setting->value }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -84,7 +84,13 @@
 
                                 <div class="text-end mb-3">
                                     <a href="{{ route('admin.settings.contactsettings') }}" class="btn btn-primary"
-                                        type="submit">Edit Settings</a>
+                                        type="submit">
+                                        @if($contactSettings->count() > 0)
+                                        Edit Settings
+                                        @else
+                                            Add Settings
+                                        @endif
+                                    </a>
                                 </div>
                             </div>
                         </div>
