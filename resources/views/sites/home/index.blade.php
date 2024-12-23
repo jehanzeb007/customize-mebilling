@@ -42,21 +42,26 @@
         <section id="home" class="slider-area fix p-relative mb-5">
             <!-- YouTube Video Background -->
             <div class="video-background">
-                <iframe
-                    src="https://www.youtube.com/embed/FjR3BjvRrpo?autoplay=1&mute=1&loop=1&playlist=FjR3BjvRrpo&controls=0&showinfo=0&modestbranding=1&rel=0"
-                    frameborder="0"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen>
-                </iframe>
+                <video
+                src="{{asset('assets/images/mebilling.mp4')}}"
+                autoplay loop muted>
+                </video>
+
+{{--                <iframe--}}
+{{--                    src="https://www.youtube.com/embed/FjR3BjvRrpo?autoplay=1&mute=1&loop=1&playlist=FjR3BjvRrpo&controls=0&showinfo=0&modestbranding=1&rel=0"--}}
+{{--                    frameborder="0"--}}
+{{--                    allow="autoplay; fullscreen"--}}
+{{--                    allowfullscreen>--}}
+{{--                </iframe>--}}
             </div>
 
             <!-- Content Overlay -->
             <div class="slider-content-overlay">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             <div class="slider-content text-left">
-                                <h2 data-animation="fadeInUp" data-delay=".4s">At MeBillings, we Simplify Care and Amplify Revenue by up to 25%</h2>
+                                <h2 class="animated-box" data-animation="fadeInUp" data-delay=".4s">At MeBillings, we Simplify Care and Amplify Revenue by up to 25%</h2>
                                 <p data-animation="fadeInUp" data-delay=".6s">Enhance your practice's revenue, reduce billing errors, and speed up reimbursements with MeBillings' advanced AI-driven medical billing solutions.</p>
                                 <div class="slider-btn mt-25">
                                     <a href="{{ asset('/about_us') }}" class="btn ss-btn">Learn More <i class="fas fa-chevron-right"></i></a>
@@ -145,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <h3>100% HIPAA Compliant Infrastructure</h3>
+                        <h2>100% HIPAA Compliant Infrastructure</h2>
                         <p>Protecting patient data is at the core of our operations. Our medical billing platform is
                             built on a secure, HIPAA-compliant infrastructure designed to safeguard sensitive health
                             information at every stage. From encrypted data transmission to secure storage and access
@@ -179,7 +184,7 @@
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <h2 class="mb-0">Better Numbers</h2>
+                                    <h3 class="mb-0">Better Numbers</h3>
                                 </div>
                             </li>
                             <li class="align-items-center points">
@@ -187,7 +192,7 @@
                                     <div><img src="{{ asset('assets/images/dollar-icon.png') }}" alt="de-icon"></div>
                                 </div>
                                 <div class="text">
-                                    <h2 class="mb-0">Hassle Free Billing</h2>
+                                    <h3 class="mb-0">Hassle Free Billing</h3>
                                 </div>
                             </li>
 
@@ -197,7 +202,7 @@
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <h2 class="mb-0">Killer Analytics</h2>
+                                    <h3 class="mb-0">Killer Analytics</h3>
                                 </div>
                             </li>
                             <li class="align-items-center points">
@@ -205,7 +210,7 @@
                                     <div><img src="{{ asset('assets/images/support-icon.png') }}" alt="de-icon"></div>
                                 </div>
                                 <div class="text">
-                                    <h2 class="mb-0">Proactive Support</h2>
+                                    <h3 class="mb-0">Proactive Support</h3>
                                 </div>
                             </li>
                         </ul>
@@ -425,7 +430,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="about-content s-about-content pl-30">
-                            <div class="section-title mb-20">
+                            <div class="section-title">
                                 <span>Capability & Strengths</span>
                                 {{--                                <h3>We Specialize in Medical Billing</h3> --}}
                             </div>
@@ -484,7 +489,7 @@
                     <div class="col-xl-8 col-lg-8">
                         <div class="section-title text-center pl-40 pr-40 mb-4">
                             <span> our services</span>
-                            <h2>Our Special Services For You</h2>
+                            <h3>Our Special Services For You</h3>
                             <p class="mt-10">Fusce pharetra odio in urna laoreet laoreet. Aliquam erat volutpat.
                                 Phasellus
                                 nec ligula arcu. Aliquam eu urna pulvinar, iaculis ipsum in, porta massa.</p>
@@ -933,7 +938,7 @@
                     <div class="col-lg-8">
                         <div class="section-title center-align mb-4 text-center">
                             <span>TESTIMONIAL</span>
-                            <h2>What Our Clients Say</h2>
+                            <h3>What Our Clients Say</h3>
                         </div>
                     </div>
                 </div>
@@ -949,8 +954,7 @@
                                         <div class="testi-img">
 
                                             @if ($testimonial->image)
-                                                {{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}" --}}
-                                                {{--                                             alt="{{ $testimonial->name }}" width="50"> --}}
+
                                                 <img src="{{ asset($testimonial->image) }}"
                                                      alt="{{ $testimonial->name }}"
                                                      width="50">
@@ -958,9 +962,6 @@
                                                 <img src="{{ asset($testimonial->image) }}"
                                                      alt="{{ $testimonial->name }}"
                                                      width="50">
-
-
-                                                {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" /> --}}
                                             @endif
 
 
@@ -992,326 +993,25 @@
 
 
         <!-- contact-area -->
-        <section id="contact" class="contact-area contact-bg pb-70 p-relative fix">
+        <section id="contact" class="contact-area contact-bg pb-5 p-relative fix">
 
             @include('sites.form.contact-us')
 
         </section>
         <!-- contact-area-end -->
 
-        <!-- faq-area -->
-
         <section>
+            <section id="pricing" class="pricing-area pb-5 mt-5">
+                <div class="container mt-5">
 
-            <div class="container mt-5 mb-5">
-
-                <div class="faq-container">
-
-                    <div class="section-title left-align mb-50">
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus,
-                            mattis eget sagittis at, accumsan sed leo.</p>
-                    </div>
-                    <div>
-                        <!-- FAQ Item 1 -->
-                        @foreach($faqs as $index => $faq)
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span>{{$faq->question}}</span>
-                                    <i class="faq-icon eye-toggle"></i>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>{{$faq->answer}}</p>
-                                </div>
-                            </div>
-                        @endforeach
-
-                        <!-- FAQ Item 2 -->
-                        {{--                        <div class="faq-item">--}}
-                        {{--                            <div class="faq-question">--}}
-                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
-                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="faq-answer">--}}
-                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
-                        {{--                        <div class="faq-item">--}}
-                        {{--                            <div class="faq-question">--}}
-                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
-                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="faq-answer">--}}
-                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
-
-                        {{--                        <!-- FAQ Item 3 -->--}}
-                        {{--                        <div class="faq-item">--}}
-                        {{--                            <div class="faq-question">--}}
-                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
-                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="faq-answer">--}}
-                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
-                        {{--                        <div class="faq-item">--}}
-                        {{--                            <div class="faq-question">--}}
-                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
-                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="faq-answer">--}}
-                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        {{--        <section class="faq-area pt-50 pb-5 fix"> --}}
-        {{--            <div class="container"> --}}
-        {{--                <div class="row align-items-end"> --}}
-        {{--                    <div class="col-lg-12"> --}}
-        {{--                        <div class="section-title left-align mb-50"> --}}
-        {{--                            <h2>Frequently Asked Questions</h2> --}}
-        {{--                            <p>Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus, --}}
-        {{--                                mattis eget sagittis at, accumsan sed leo.</p> --}}
-        {{--                        </div> --}}
-        {{--                        <div class="faq-wrap"> --}}
-        {{--                            <div class="accordion" id="accordionExample"> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingThree"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseThree" aria-expanded="true" --}}
-        {{--                                                aria-controls="collapseThree"> --}}
-        {{--                                                Aliquam varius ligula nec leo tempus porta. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingOne"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseOne" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseOne"> --}}
-        {{--                                                Suspendisse vitae varius diam, a vulputate urna. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingTwo"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseTwo" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseTwo"> --}}
-        {{--                                                Aliquam aliquet purus eget lacus pretium. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingOne"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseOne" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseOne"> --}}
-        {{--                                                Suspendisse vitae varius diam, a vulputate urna. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor --}}
-        {{--                                            incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi --}}
-        {{--                                            ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingTwo"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseTwo" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseTwo"> --}}
-        {{--                                                Aliquam aliquet purus eget lacus pretium. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor --}}
-        {{--                                            incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi --}}
-        {{--                                            ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingOne"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseOne" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseOne"> --}}
-        {{--                                                Suspendisse vitae varius diam, a vulputate urna. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor --}}
-        {{--                                            incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi --}}
-        {{--                                            ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-        {{--                                <div class="faq-card"> --}}
-        {{--                                    <div class="card-header" id="headingTwo"> --}}
-        {{--                                        <h2 class="mb-0"> --}}
-        {{--                                            <button class="faq-btn collapsed" type="button" data-toggle="collapse" --}}
-        {{--                                                data-target="#collapseTwo" aria-expanded="false" --}}
-        {{--                                                aria-controls="collapseTwo"> --}}
-        {{--                                                Aliquam aliquet purus eget lacus pretium. --}}
-        {{--                                            </button> --}}
-        {{--                                        </h2> --}}
-        {{--                                    </div> --}}
-        {{--                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" --}}
-        {{--                                        data-parent="#accordionExample"> --}}
-        {{--                                        <div class="card-body"> --}}
-        {{--                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod --}}
-        {{--                                            tempor --}}
-        {{--                                            incididunt ut labore et dolore magna --}}
-        {{--                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris --}}
-        {{--                                            nisi --}}
-        {{--                                            ut aliquip --}}
-        {{--                                        </div> --}}
-        {{--                                    </div> --}}
-        {{--                                </div> --}}
-
-
-        {{--                            </div> --}}
-        {{--                        </div> --}}
-        {{--                    </div> --}}
-
-
-        {{--                </div> --}}
-        {{--            </div> --}}
-        {{--        </section> --}}
-        <!-- faq-aread-end -->
-
-        <!-- blog-area -->
-        <section id="blog" class="blog-area  p-relative pt-5 pb-0 fix"
-                 style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-10">
-                        <div class="section-title text-center mb-80">
-                            <span> OUR LATEST BOLG </span>
-                            <h2>Stay Updated To Our Blog & News</h2>
-                            {{--                            <p>Fusce pharetra odio in urna laoreet laoreet. Aliquam erat volutpat. Phasellus nec ligula --}}
-                            {{--                                arcu. Aliquam eu urna pulvinar, iaculis ipsum in, porta massa.</p> --}}
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    @foreach( $blogs as $index => $blog)
-                        <div class="col-lg-4 col-md-12">
-                            <div class="single-post mb-30">
-                                <div class="blog-thumb">
-                                    <a href="blog-details.html">
-                                        @if ($blog->image)
-                                            <img src="{{ asset('storage/' . $blog->image) }}"
-                                                 alt="{{ $blog->name }}" width="50">
-                                        @else
-                                            <img src="assets/images/blog_img01.jpg" alt="img">
-                                        @endif
-
-
-                                    </a>
-                                </div>
-                                <div class="blog-content text-center">
-                                    <div class="b-meta mb-20">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
-
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <i class="fas fa-user"></i> {{$blog->author_name}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h4><a href="blog-details.html">{{$blog->name}}</a>
-                                    </h4>
-                                    <p>{{strip_tags($blog->description)}}</p>
-                                    <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
-                                    </div>
-
-                                </div>
-
-
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title center-align mb-4 text-center">
+                                <span>It's Integration with Your EHR</span>
+{{--                                <h3>What Our Clients Say</h3>--}}
                             </div>
                         </div>
-                    @endforeach
-
-                    <div class="" style="padding-left: 480px">
-                        <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
-                           data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
                     </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- blog-area-end -->
-
-        <section>
-            <section id="pricing" class="pricing-area pb-0 mt-5">
-                <div class="container">
-
-
                     <div class="exceptional-wrapper" >
                         <div class="container-fluid p-0">
                             <div class="inner">
@@ -1364,6 +1064,110 @@
                 </div>
             </section>
         </section>
+
+        <!-- faq-area -->
+
+        <section>
+
+            <div class="container mt-5 mb-5">
+
+                <div class="faq-container">
+
+                    <div class="section-title left-align mb-50">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus,
+                            mattis eget sagittis at, accumsan sed leo.</p>
+                    </div>
+                    <div>
+                        <!-- FAQ Item 1 -->
+                        @foreach($faqs as $index => $faq)
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>{{$faq->question}}</span>
+                                    <i class="faq-icon eye-toggle"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>{{$faq->answer}}</p>
+                                </div>
+                            </div>
+                        @endforeach
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- faq-aread-end -->
+
+        <!-- blog-area -->
+        <section id="blog" class="blog-area  p-relative pt-5 pb-0 fix"
+                 style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="section-title text-center mb-80">
+                            <span> OUR LATEST BOLG </span>
+                            <h3>Stay Updated To Our Blog & News</h3>
+                            {{--                            <p>Fusce pharetra odio in urna laoreet laoreet. Aliquam erat volutpat. Phasellus nec ligula --}}
+                            {{--                                arcu. Aliquam eu urna pulvinar, iaculis ipsum in, porta massa.</p> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach( $blogs as $index => $blog)
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html">
+                                        @if ($blog->image)
+                                            <img src="{{ asset('storage/' . $blog->image) }}"
+                                                 alt="{{ $blog->name }}" width="50">
+                                        @else
+                                            <img src="assets/images/blog_img01.jpg" alt="img">
+                                        @endif
+
+
+
+                                    </a>
+                                </div>
+                                <div class="blog-content text-center">
+                                    <div class="b-meta mb-20">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
+
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="fas fa-user"></i> {{$blog->author_name}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4><a href="blog-details.html">{{$blog->name}}</a>
+                                    </h4>
+                                    <p>{{strip_tags($blog->description)}}</p>
+                                    <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    @endforeach
+
+                    <div class="" style="padding-left: 480px">
+                        <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
+                           data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- blog-area-end -->
+
+
 
     </main>
 @endsection
@@ -1466,6 +1270,7 @@
                 margin: 10,
                 nav: false,
                 dots: true,
+                autoplay: true,
                 // mouseDrag: false,
                 // touchDrag: false,
                 // pullDrag: false,
