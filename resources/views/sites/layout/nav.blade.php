@@ -29,7 +29,11 @@
                                         <a class="@if (request()->routeIs('home')) active @endif" href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li class="has-sub">
-                                        <a class="@if (request()->routeIs('services.*')) active @endif" href="#">Our Services</a>
+                                        <a class="@if (request()->routeIs('services.*')) active @endif" href="#">Our Services
+                                        <span ><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15">
+                                                <path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path>
+                                            </svg></span>
+                                        </a>
                                         <ul>
                                             <li><a href="{{ route('services.revenu_optimzation') }}">Revenue Optimization</a></li>
                                             <li><a href="{{ route('services.revenue_cycle_management') }}">Revenue Cycle Management</a></li>
@@ -40,7 +44,10 @@
                                         </ul>
                                     </li>
                                     <li class="has-sub">
-                                        <a class="@if (request()->routeIs('billing.*')) active @endif" href="#">Billing Solutions</a>
+                                        <a class="@if (request()->routeIs('billing.*')) active @endif" href="#">Billing Solutions
+                                            <span class=""><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15">
+                                                <path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path>
+                                            </svg></span></a>
                                         <ul>
                                             <li><a href="{{ route('billing.physician') }}">Physician Billing</a></li>
                                             <li><a href="{{ route('billing.emergencyRoom') }}">Freestanding Emergency Room</a></li>

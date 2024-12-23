@@ -39,7 +39,12 @@ class BlogController extends Controller
     public function store(BlogRequest $request)
     {
 
-        $imagePath = $this->handleImageUpload($request);
+        $imagePath = $request->hasFile('image')
+            ? $request->file('image')->store('blogs', 'public')
+            : null; // Default to null if no image is uploaded
+
+
+//        $imagePath = $this->handleImageUpload($request);
 
         $metaDescription = json_encode([
             'title' => $request->input('meta.title'),
