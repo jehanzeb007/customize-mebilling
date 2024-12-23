@@ -4,69 +4,72 @@
     <main>
         <!-- slider-area -->
         {{-- <section id="home" class="slider-area p-relative p-0"> --}}
+{{--        <section id="home" class="slider-area fix p-relative mb-5">--}}
+{{--            <div class="video">--}}
+{{--                <iframe--}}
+{{--                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">--}}
+{{--                </iframe>--}}
+{{--            </div>--}}
+
+{{--                <div id="slider-active2">--}}
+
+{{--                         style="background-image:url(img/an-bg/header-bg.png)">--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="row align-items-center">--}}
+{{--                                <div class="col-lg-6">--}}
+{{--                                    <div class="slider-content s-slider-content text-left">--}}
+{{--                                        <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than--}}
+{{--                                            <span>Billing</span></h2>--}}
+{{--                                        <p data-animation="fadeInUp" data-delay=".6s">--}}
+{{--                                            Enhance Your Revenue , Empower Your Profit</p>--}}
+{{--                                        <div class="slider-btn mt-25">--}}
+{{--                                            <a href="{{ asset('/about_us') }}" class="btn ss-btn"--}}
+{{--                                               data-animation="fadeInRight"--}}
+{{--                                               data-delay=".8s">Learn More <i class="fas fa-chevron-right"></i></a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+
+
+{{--        </section>--}}
+
+        <!-- Header Section with YouTube Video Background -->
         <section id="home" class="slider-area fix p-relative mb-5">
+            <!-- YouTube Video Background -->
+            <div class="video-background">
+                <iframe
+                    src="https://www.youtube.com/embed/FjR3BjvRrpo?autoplay=1&mute=1&loop=1&playlist=FjR3BjvRrpo&controls=0&showinfo=0&modestbranding=1&rel=0"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-            <div class="slider-active2">
-                <div class="single-slider slider-bg d-flex align-items-center"
-                    style="background-image:url(img/an-bg/header-bg.png)">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="slider-content s-slider-content text-left">
-                                    <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than <span>Billing</span></h2>
-                                    <p data-animation="fadeInUp" data-delay=".6s">
-                                        Enhance Your Revenue , Empower Your Profit</p>
-                                    <div class="slider-btn mt-25">
-                                        <a href="{{ asset('/about_us') }}" class="btn ss-btn" data-animation="fadeInRight"
-                                            data-delay=".8s">Learn More <i class="fas fa-chevron-right"></i></a>
-                                    </div>
+            <!-- Content Overlay -->
+            <div class="slider-content-overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="slider-content text-left">
+                                <h2 data-animation="fadeInUp" data-delay=".4s">At MeBillings, we Simplify Care and Amplify Revenue by up to 25%</h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">Enhance your practice's revenue, reduce billing errors, and speed up reimbursements with MeBillings' advanced AI-driven medical billing solutions.</p>
+                                <div class="slider-btn mt-25">
+                                    <a href="{{ asset('/about_us') }}" class="btn ss-btn">Learn More <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="container">
-                                    <div class="slider-active2">
-                                        <div class="single-slider slider-bg d-flex align-items-center">
-                                            <div id="header" class="owl-carousel  owl-loaded owl-drag">
-                                                <div class="owl-stage-outer">
-                                                    <div class="owl-stage"
-                                                        style="transform: translate3d(-2292px, 0px, 0px); transition: all; width: 9168px;">
-                                                        <div class="owl-item">
-                                                            <div class="row ">
+                        </div>
 
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/header-img.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item ">
-                                                            <div class="row ">
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/bg1.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="owl-item ">
-                                                            <div class="row ">
-                                                                <div class="col-lg-12">
-                                                                    <img src="assets/images/Pic 2.png" alt="header-img"
-                                                                        class="header-img" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
+                    </div>
+                </div>
+            </div>
         </section>
+
+
 
         <!-- slider-area-end -->
 
@@ -126,7 +129,39 @@
                 </div>
             </div>
             {{-- </div> --}}
-        </section><br>
+        </section>
+        <br>
+
+        <!-- Hippa Section -->
+
+        <section>
+            <div class="hipaa-bg">
+            <div class="container mt-5 hipaa">
+                <div class="inner">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mt-5">
+                            <img src="{{asset('assets/images/hippa.png')}}">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>100% HIPAA Compliant Infrastructure</h3>
+                        <p>Protecting patient data is at the core of our operations. Our medical billing platform is
+                            built on a secure, HIPAA-compliant infrastructure designed to safeguard sensitive health
+                            information at every stage. From encrypted data transmission to secure storage and access
+                            controls, we implement robust measures to ensure compliance with federal regulations and
+                            industry standards. Our commitment to data security not only protects your practice from
+                            breaches and penalties but also fosters trust with your patients. With a solid foundation of
+                            compliance and security, you can focus on delivering quality care while we handle your
+                            revenue cycle with precision and integrity.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Hippa Section -->
 
         <!-- main-area-end -->
 
@@ -135,7 +170,7 @@
         <section class="department-area cta-bg p-0 fix mt-5 mb-5">
             <div class="container">
 
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-lg-6">
                         <ul class="p-0">
                             <li class="align-items-center points">
@@ -158,7 +193,8 @@
 
                             <li class="align-items-center points">
                                 <div class="icon">
-                                    <div><img src=" {{ asset('assets/images/analytics-icon.png') }}" alt="de-icon"></div>
+                                    <div><img src=" {{ asset('assets/images/analytics-icon.png') }}" alt="de-icon">
+                                    </div>
                                 </div>
                                 <div class="text">
                                     <h2 class="mb-0">Killer Analytics</h2>
@@ -177,8 +213,8 @@
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="s-d-img p-relative points">
-                            <img src="{{ asset('assets/images/de-illustration.png') }}" alt="img">
+                        <div class="s-d-img p-relative">
+                            <img src="{{ asset('assets/images/doctor.jpg') }}" alt="img">
 
                         </div>
 
@@ -222,7 +258,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/Credentaling.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/Credental.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -248,7 +284,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/enrollment.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/patient_enrollment.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -276,7 +312,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/scheduling.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/medical-scheduling.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -307,7 +343,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/reminder.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/appoiment-reminder.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -337,7 +373,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/verification.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/mediacl-verification.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -362,7 +398,7 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="image-wrapper">
-                                            <img src="{{ asset('assets/images/insurance.jpg') }}" alt="">
+                                            <img src="{{ asset('assets/images/medical-insurance.jpg') }}" alt="">
                                         </div>
                                     </div>
 
@@ -383,7 +419,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="s-about-img p-relative">
-                            <img src="assets/images/illlustration.png" alt="img">
+                            <img src="assets/images/c&s.jpg" alt="img">
 
                         </div>
                     </div>
@@ -590,7 +626,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="1">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-1">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -613,7 +649,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="2">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-2">
                                         <img src="{{ asset('assets/images/analysis-icon.png') }}" alt="">
@@ -641,7 +677,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="3">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-3">
                                         <img src="{{ asset('assets/images/planning-icon.png') }}" alt="">
@@ -664,7 +700,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="4">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-4">
                                         <img src="{{ asset('assets/images/implementation-icon.png') }}" alt="">
@@ -687,7 +723,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="5">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-5">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -711,7 +747,7 @@
                         <div class="col-md-3">
                             <div class="border-container" data-box="6">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-6">
                                         <img src="{{ asset('assets/images/improvement-icon.png') }}" alt="">
@@ -742,7 +778,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="1">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-1">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -765,7 +801,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="2">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-2">
                                         <img src="{{ asset('assets/images/analysis-icon.png') }}" alt="">
@@ -788,7 +824,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="3">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-3">
                                         <img src="{{ asset('assets/images/planning-icon.png') }}" alt="">
@@ -815,7 +851,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="4">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-4">
                                         <img src="{{ asset('assets/images/implementation-icon.png') }}" alt="">
@@ -838,7 +874,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="5">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-5">
                                         <img src="{{ asset('assets/images/monitor-icon.png') }}" alt="">
@@ -862,7 +898,7 @@
                         <div class="col-md-4">
                             <div class="border-container" data-box="6">
                                 <img src="{{ asset('assets/images/arrow-border.png') }}" alt=""
-                                    class="arrow-image">
+                                     class="arrow-image">
                                 <div class="icon">
                                     <div class="inner-icon" id="icon-bg-6">
                                         <img src="{{ asset('assets/images/improvement-icon.png') }}" alt="">
@@ -915,22 +951,23 @@
                                             @if ($testimonial->image)
                                                 {{--                                        <img src="{{ asset('storage/' . $testimonial->image) }}" --}}
                                                 {{--                                             alt="{{ $testimonial->name }}" width="50"> --}}
-                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
-                                                    width="50">
+                                                <img src="{{ asset($testimonial->image) }}"
+                                                     alt="{{ $testimonial->name }}"
+                                                     width="50">
                                             @else
-                                                <img src="{{ asset($testimonial->image) }}" alt="{{ $testimonial->name }}"
-                                                    width="50">
+                                                <img src="{{ asset($testimonial->image) }}"
+                                                     alt="{{ $testimonial->name }}"
+                                                     width="50">
 
 
                                                 {{--                                        <img src="{{ asset('assets/images/meBilling.png') }}" /> --}}
                                             @endif
 
 
-
                                         </div>
                                         <div class="single-testimonial-bg">
                                             <div class="com-icon"><img src="{{ asset('assets/images/qutation.png') }}"
-                                                    alt="img"></div>
+                                                                       alt="img"></div>
                                             <div class="testi-author">
                                                 <div class="ta-info">
                                                     <h6>{{ $testimonial->name }}</h6>
@@ -977,56 +1014,57 @@
                     </div>
                     <div>
                         <!-- FAQ Item 1 -->
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Aliquam varius ligula nec leo tempus porta.</span>
-                                <i class="faq-icon eye-toggle"></i>
+                        @foreach($faqs as $index => $faq)
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>{{$faq->question}}</span>
+                                    <i class="faq-icon eye-toggle"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>{{$faq->answer}}</p>
+                                </div>
                             </div>
-                            <div class="faq-answer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
+                        @endforeach
 
                         <!-- FAQ Item 2 -->
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>
-                            </div>
-                        </div>
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Suspendisse vitae varius diam, a vulputate urna.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Suspendisse potenti. Etiam tincidunt nulla id massa faucibus posuere.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
 
-                        <!-- FAQ Item 3 -->
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Aliquam aliquet purus eget lacus pretium.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Aliquam aliquet purus eget lacus pretium.</span>
-                                <i class="faq-icon eye-toggle"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>
-                            </div>
-                        </div>
+                        {{--                        <!-- FAQ Item 3 -->--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="faq-item">--}}
+                        {{--                            <div class="faq-question">--}}
+                        {{--                                <span>Aliquam aliquet purus eget lacus pretium.</span>--}}
+                        {{--                                <i class="faq-icon eye-toggle"></i>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="faq-answer">--}}
+                        {{--                                <p>Aliquam vestibulum orci in augue tincidunt, et malesuada quam convallis.</p>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
                     </div>
                 </div>
 
@@ -1206,7 +1244,7 @@
 
         <!-- blog-area -->
         <section id="blog" class="blog-area  p-relative pt-5 pb-0 fix"
-            style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
+                 style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
@@ -1220,107 +1258,48 @@
                 </div>
                 <div class="row">
                     @foreach( $blogs as $index => $blog)
-                    <div class="col-lg-4 col-md-12">
-                        <div class="single-post mb-30">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html">
-                                    @if ($blog->image)
-                                        <img src="{{ asset('storage/' . $blog->image) }}"
-                                             alt="{{ $blog->name }}" width="50">
-                                    @else
-                                        <img src="assets/images/blog_img01.jpg" alt="img">
-                                    @endif
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-post mb-30">
+                                <div class="blog-thumb">
+                                    <a href="blog-details.html">
+                                        @if ($blog->image)
+                                            <img src="{{ asset('storage/' . $blog->image) }}"
+                                                 alt="{{ $blog->name }}" width="50">
+                                        @else
+                                            <img src="assets/images/blog_img01.jpg" alt="img">
+                                        @endif
 
 
-                                </a>
-                            </div>
-                            <div class="blog-content text-center">
-                                <div class="b-meta mb-20">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
+                                    </a>
+                                </div>
+                                <div class="blog-content text-center">
+                                    <div class="b-meta mb-20">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="far fa-calendar-alt"></i> {{ $blog->created_at->format('Y-m-d') }}
 
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <i class="fas fa-user"></i> {{$blog->author_name}}
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <i class="fas fa-user"></i> {{$blog->author_name}}
+                                            </div>
                                         </div>
                                     </div>
+                                    <h4><a href="blog-details.html">{{$blog->name}}</a>
+                                    </h4>
+                                    <p>{{strip_tags($blog->description)}}</p>
+                                    <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
+                                    </div>
+
                                 </div>
-                                <h4><a href="blog-details.html">{{$blog->name}}</a>
-                                </h4>
-                                <p>{{strip_tags($blog->description)}}</p>
-                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>
-                                </div>
+
 
                             </div>
-
-
                         </div>
-                    </div>
                     @endforeach
-{{--                    <div class="col-lg-4 col-md-12">--}}
-{{--                        <div class="single-post active mb-30">--}}
-{{--                            <div class="blog-thumb">--}}
-{{--                                <a href="blog-details.html">--}}
-{{--                                    <img src="assets/images/blog_img02.jpg" alt="img">--}}
-{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-{{--                                </a>--}}
 
-{{--                            </div>--}}
-{{--                            <div class="blog-content text-center">--}}
-{{--                                <div class="b-meta mb-20">--}}
-{{--                                    <div class="row">--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-{{--                                        </div>--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <h4><a href="blog-details.html">Monthly eraesent justo mauris, vitae nisi ultricies.</a>--}}
-{{--                                </h4>--}}
-{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-{{--                                    gravida lacus.</p>--}}
-{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-4 col-md-12">--}}
-{{--                        <div class="single-post mb-30">--}}
-{{--                            <div class="blog-thumb">--}}
-{{--                                <a href="blog-details.html">--}}
-{{--                                    <img src="assets/images/blog_img03.jpg" alt="img">--}}
-{{--                                    <img src="assets/images/b-link.png" alt="b-link" class="b-link">--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="blog-content text-center">--}}
-{{--                                <div class="b-meta mb-20">--}}
-{{--                                    <div class="row">--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="far fa-calendar-alt"></i> 7 March, 2019--}}
-{{--                                        </div>--}}
-{{--                                        <div class="col-lg-6 col-md-6">--}}
-{{--                                            <i class="fas fa-user"></i> By Jhone Doe--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <h4><a href="blog-details.html">User Experience Psychology And Performance Smashing</a>--}}
-{{--                                </h4>--}}
-{{--                                <p>Aenean sed velit nulla. Etiam viverra scelerisque porta. Quisque ut dolor aliquam,--}}
-{{--                                    gravida lacus.</p>--}}
-{{--                                <div class="blog-btn"><a href="#">Read More<i class="fas fa-chevron-right"></i></a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
                     <div class="" style="padding-left: 480px">
                         <a href="{{ asset('/blog') }}" class="btn ss-btn" data-animation="fadeInRight"
-                            data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
+                           data-delay=".8s">More Blog <i class="fas fa-chevron-right"></i></a>
                     </div>
 
                 </div>
@@ -1328,12 +1307,70 @@
         </section>
         <!-- blog-area-end -->
 
+        <section>
+            <section id="pricing" class="pricing-area pb-0 mt-5">
+                <div class="container">
+
+
+                    <div class="exceptional-wrapper" >
+                        <div class="container-fluid p-0">
+                            <div class="inner">
+
+
+
+                                <div class="owl-carousel exceptional-owl owl-theme owl-loaded owl-drag brand">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage"
+                                             style="transform: translate3d(-1324px, 0px, 0px); transition: all; width: 4635px;">
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand5.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 204px; margin-right: 24px;">
+                                                <div class="logo-wrapper">
+                                                    <img src="assets/images/brand6.png" alt="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
     </main>
 @endsection
 
 @push('js')
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
 
             // Select all FAQ questions
@@ -1354,9 +1391,6 @@
                     }
                 });
             });
-
-
-
 
 
             const processSection = document.getElementById("processSection");
@@ -1400,12 +1434,22 @@
 
             $("#header").owlCarousel({
                 loop: true,
-                autoplay: true,
+                // autoplay: true,
                 margin: 20,
                 nav: false,
                 autoplayTimeout: 5000,
                 items: 1,
                 smartSpeed: 1000,
+            });
+
+            $(".brand").owlCarousel({
+                loop: true,
+                autoplay: true,
+                margin: 20,
+                nav: false,
+                autoplayTimeout: 3000,
+                items: 4,
+                smartSpeed: 10000,
             });
 
             $("#testimonial").owlCarousel({
@@ -1428,10 +1472,10 @@
                 smartSpeed: 1000,
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
-                onTranslate: function() {
+                onTranslate: function () {
                     $(".owl-item").removeClass("fade-in-up").addClass("fade-out-up inactive");
                 },
-                onTranslated: function() {
+                onTranslated: function () {
                     $(".owl-item.active").removeClass("fade-out-up inactive").addClass("fade-in-up");
                 },
 

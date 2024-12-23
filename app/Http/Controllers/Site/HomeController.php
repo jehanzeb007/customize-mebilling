@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\Models\FAQ;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use App\Models\Slider;
@@ -22,7 +23,9 @@ class HomeController extends Controller
 
         $blogs = Blog::paginate(5);
 
-        return view('sites.home.index', $data ,compact('testimonials','blogs'));
+        $faqs = Faq::paginate(10);
+
+        return view('sites.home.index', $data ,compact('testimonials','blogs','faqs'));
 
     }
 
