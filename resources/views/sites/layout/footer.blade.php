@@ -1,4 +1,4 @@
-<footer class="footer-bg footer-p">
+{{-- <footer class="footer-bg footer-p">
     <div class="overly"><img src="{{asset('assets/images/footer-bg.png')}}" alt="rest"></div>
     <div class="footer-top pb-30" style="background-color: #ECF1FA;">
         <div class="container">
@@ -97,6 +97,6 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> --}}
 
-{{-- {!! $footerText !!}
+{!! $footerText !!}

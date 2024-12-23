@@ -193,14 +193,12 @@
 
 <script>
     tinymce.init({
-        selector: '#editor', // Replace this CSS selector to match your editor
+        selector: '#editor',
         plugins: 'code table lists image',
         toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | table | image | code',
-        content_css: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', // Include Font Awesome CSS
         valid_elements: '*[*]',
         setup: function (editor) {
             editor.on('init', function () {
-                // Add the Font Awesome class to the editor's body to apply styles
                 editor.getBody().classList.add('fa');
             });
         }
