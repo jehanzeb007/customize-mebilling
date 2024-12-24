@@ -8,7 +8,7 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <h2>Simplify Medical Credentialing Without Hassle</h2>
+                    <h2>Medical Credentialing Without Hassle</h2>
 {{--                    <p><strong>MeBilling handles all the paperwork so that you can focus on patient care</strong></p>--}}
                     <p>The medical credentialing process helps ensure that the provider meets all the required standards of the healthcare organization as well as its payers. As a medical billing and RCM company, MeBilling understands firsthand the impact provider credentialing has on your organization’s cash flow and profitability. Did you know that lapses or delays in the credentialing process may cause reimbursement to be delayed or denied?</p>
                     <p>MeBilling provides a straightforward and hassle-free credentialing strategy that focuses on improving your repayment rates. Our team of professionals and specialists maintains expertise in the provider credentialing process, including staying on top of industry changes, medical credentialing trends, and changing payer requirements.</p>

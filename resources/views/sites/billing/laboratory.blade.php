@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                        <h2>Flexible Revenue Cycle Management & Billing for All Laboratories
+                        <h2>Revenue Cycle Management & Billing for All Laboratories
                         </h2>
 
                     <p >
