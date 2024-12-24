@@ -54,9 +54,9 @@
                                                             <img src="{{ asset('assets/images/cre.svg') }}" alt="">
                                                         </div>
                                                     </div>
-                                                    <h2 class="titlee">
+                                                    <h3 class="titlee">
                                                         Our Revenue Cycle Analytics Services
-                                                    </h2>
+                                                    </h3>
                                                     <p class="subtitlee">With MeBilling's revenue cycle analytics, you can assess and improve your revenue cycle performance. Our dependable solutions leverage expertise to help you make sound, data-driven decisions effectively.</p>
                                                 </div>
                                             </div>
@@ -65,9 +65,9 @@
                                                     <div class="image-wrapper">
                                                         <img src="{{ asset('assets/images/charge.svg') }}" alt="">
                                                     </div>
-                                                    <h2 class="titlee">
+                                                    <h3 class="titlee">
                                                         Optimize Data & Save Time
-                                                    </h2>
+                                                    </h3>
                                                     <p class="subtitlee">MeBilling's analytics uncover unrealized revenue opportunities, enhancing your organization's competitive edge. Our cost-effective solutions deliver in-depth performance insights to boost staff productivity and efficiency.</p>
                                                 </div>
                                             </div>
@@ -76,9 +76,9 @@
                                                     <div class="image-wrapper">
                                                         <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                     </div>
-                                                    <h2 class="titlee">
+                                                    <h3 class="titlee">
                                                         Track Your Visits with Analytics
-                                                    </h2>
+                                                    </h3>
                                                     <p class="subtitlee">Work with MeBilling to easily see your practice's monthly, daily, weekly, or even hourly visits. This will help empower and guide your staffing decisions based on statistical and volume data.</p>
                                                 </div>
                                             </div>
@@ -88,9 +88,9 @@
                                                     <div class="image-wrapper">
                                                         <img src="{{ asset('assets/images/followup.svg') }}" alt="">
                                                     </div>
-                                                    <h2 class="titlee">
+                                                    <h3 class="titlee">
                                                         Identify Trends
-                                                    </h2>
+                                                    </h3>
                                                     <p class="subtitlee">Our performance analytics will identify trends on when your clinic, hospital, or facility's peak hours occur.</p>
                                                 </div>
                                             </div>
@@ -99,9 +99,9 @@
                                                     <div class="image-wrapper">
                                                         <img src="{{ asset('assets/images/den.svg') }}" alt="">
                                                     </div>
-                                                    <h2 class="titlee">
+                                                    <h3 class="titlee">
                                                         Customize Reports
-                                                    </h2>
+                                                    </h3>
                                                     <p class="subtitlee">Get an edge with custom-built metrics that offer visit and payment projections to help your financial and operational decisions ahead of time.
                                                     </p>
                                                 </div>

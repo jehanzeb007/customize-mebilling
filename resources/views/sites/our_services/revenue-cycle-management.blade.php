@@ -51,9 +51,9 @@
                                                         <img src="{{asset('assets/images/cre.svg')}}" alt="">
                                                     </div>
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Increase Revenue
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">With a team of dedicated and passionate experts at the helm, MeBilling’s all-inclusive approach to revenue cycle management offers a seamless payment cycle to boost your profit margin.</p>
                                             </div>
                                         </div>
@@ -62,9 +62,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/charge.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Reduce Account Receivable
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our team regularly follows up on all claims to ensure timely reimbursements, and we specialize in aging A/R recovery.</p>
                                             </div>
                                         </div>
@@ -73,9 +73,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     High Clean Claims Rate
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our expert claim scrubbing team ensures clean and error-free medical claims for faster reimbursement and considerably reduces the risks of denials and rejections.</p>
                                             </div>
                                         </div>
@@ -85,25 +85,16 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/followup.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Analytics and Reporting
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Make sound and prudent decisions with our data-driven and in-depth reports that offer complete healthcare analytics so you can gain a new level of insight into your hospital operations.</p>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                {{--                                <div class="owl-nav"> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-prev" fdprocessedid="gvi4c"> --}}
-                                {{--                                        <span aria-label="Previous">‹</span></button> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-next" fdprocessedid="6u7ser"> --}}
-                                {{--                                        <span aria-label="Next">›</span></button> --}}
-                                {{--                                </div> --}}
-                                {{--                                <div class="owl-dots"> --}}
-                                {{--                                    <button role="button" class="owl-dot active"><span></span></button> --}}
-                                {{--                                    <button role="button" class="owl-dot"><span></span></button> --}}
-                                {{--                                </div> --}}
+                    
                             </div>
                         </div>
                     </div>

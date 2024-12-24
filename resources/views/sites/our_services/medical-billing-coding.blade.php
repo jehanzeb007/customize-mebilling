@@ -27,27 +27,6 @@
 
         </div>
 
-{{--        <div class="why-us">--}}
-{{--            <div class="container">--}}
-{{--                <h3 class="coll">Partners You Can Trust</h3>--}}
-{{--                <p  class="coll">Suitable for all specialties and trusted by thousands of organizations and providers</p>--}}
-{{--                <br>--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-md-2">--}}
-{{--                    </div>--}}
-{{--                    <div class="col=md-8">--}}
-{{--                        <p class="main-paragraph coll">--}}
-{{--                            Your hospital, emergency care center, or lab relies on your billing software and service for timely and accurate information, as well as responsive and efficient services.--}}
-{{--                            However, when your billing software or service is inefficient, it usually leads to numerous issues like increased claim denials and an increase in accounts receivable. You may also face a shortage of cash flow.--}}
-{{--                        </p>--}}
-{{--                        <br>--}}
-{{--                        <p class="main-paragraph coll">With several years of industry experience, knowledge, and a national presence, we leverage our experience, current knowledge, and foresight to create customized and reliable services and solutions that help you manage your practice.</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-{{--            </div>--}}
-{{--        </div>--}}
-
         <div class="container">
 
             <div class="exceptional-wrapper" >
@@ -74,9 +53,9 @@
                                                         <img src="{{asset('assets/images/cre.svg')}}" alt="">
                                                     </div>
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Patient Preauthorization
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">With our medical billing services, you'll receive prior authorization from the insurance provider to perform a medical procedure and receive reimbursement accordingly.</p>
                                             </div>
                                         </div>
@@ -85,9 +64,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/charge.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Real-Time Insurance Verification
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">MeBilling confirms every patient's insurance eligibility to optimize and streamline your process, avoid denials, and shorten account receivable days.</p>
                                             </div>
                                         </div>
@@ -96,9 +75,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Claim Submission & Scrubbing
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our experts and scrubbing process ensure clean claims are submitted. If there are any rejections, we re-submit the same day after corrections.</p>
                                             </div>
                                         </div>
@@ -107,9 +86,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Medical Billing Audit
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our medical billing audit will help you track and optimize medical claim processing and payment posting in order to maximize your revenue.</p>
                                             </div>
                                         </div>
@@ -118,9 +97,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Patient Statements
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">We confirm payment from all payers. And if a patient owes a remaining balance, a detailed patient statement is generated and sent to the patient showing their due balance.</p>
                                             </div>
                                         </div>
@@ -130,25 +109,16 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/followup.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Payment Posting
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our billing experts proactively post insurance payments. We can also update patient payments in your medical billing software to boost cash flow.</p>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                {{--                                <div class="owl-nav"> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-prev" fdprocessedid="gvi4c"> --}}
-                                {{--                                        <span aria-label="Previous">‹</span></button> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-next" fdprocessedid="6u7ser"> --}}
-                                {{--                                        <span aria-label="Next">›</span></button> --}}
-                                {{--                                </div> --}}
-                                {{--                                <div class="owl-dots"> --}}
-                                {{--                                    <button role="button" class="owl-dot active"><span></span></button> --}}
-                                {{--                                    <button role="button" class="owl-dot"><span></span></button> --}}
-                                {{--                                </div> --}}
+
                             </div>
                         </div>
                     </div>

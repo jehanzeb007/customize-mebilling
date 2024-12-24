@@ -2,41 +2,6 @@
 
 @section('content')
     <main>
-        <!-- slider-area -->
-        {{-- <section id="home" class="slider-area p-relative p-0"> --}}
-{{--        <section id="home" class="slider-area fix p-relative mb-5">--}}
-{{--            <div class="video">--}}
-{{--                <iframe--}}
-{{--                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">--}}
-{{--                </iframe>--}}
-{{--            </div>--}}
-
-{{--                <div id="slider-active2">--}}
-
-{{--                         style="background-image:url(img/an-bg/header-bg.png)">--}}
-{{--                        <div class="container">--}}
-{{--                            <div class="row align-items-center">--}}
-{{--                                <div class="col-lg-6">--}}
-{{--                                    <div class="slider-content s-slider-content text-left">--}}
-{{--                                        <h2 data-animation="fadeInUp" data-delay=".4s">Much More Than--}}
-{{--                                            <span>Billing</span></h2>--}}
-{{--                                        <p data-animation="fadeInUp" data-delay=".6s">--}}
-{{--                                            Enhance Your Revenue , Empower Your Profit</p>--}}
-{{--                                        <div class="slider-btn mt-25">--}}
-{{--                                            <a href="{{ asset('/about_us') }}" class="btn ss-btn"--}}
-{{--                                               data-animation="fadeInRight"--}}
-{{--                                               data-delay=".8s">Learn More <i class="fas fa-chevron-right"></i></a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-
-
-{{--        </section>--}}
 
         <!-- Header Section with YouTube Video Background -->
         <section id="home" class="slider-area fix p-relative mb-5">
@@ -47,12 +12,6 @@
                 autoplay loop muted>
                 </video>
 
-{{--                <iframe--}}
-{{--                    src="https://www.youtube.com/embed/FjR3BjvRrpo?autoplay=1&mute=1&loop=1&playlist=FjR3BjvRrpo&controls=0&showinfo=0&modestbranding=1&rel=0"--}}
-{{--                    frameborder="0"--}}
-{{--                    allow="autoplay; fullscreen"--}}
-{{--                    allowfullscreen>--}}
-{{--                </iframe>--}}
             </div>
 
             <!-- Content Overlay -->
