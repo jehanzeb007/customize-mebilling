@@ -50,9 +50,9 @@
                                                         <img src="{{asset('assets/images/cre.svg')}}" alt="">
                                                     </div>
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Lost Revenue Assessment
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">MeBilling can help you identify contractual underpayments by performing a comprehensive analysis of all medical services against the contracts. </p>
                                             </div>
                                         </div>
@@ -61,9 +61,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/charge.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Underpayment Recovery Services
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our team analyzes payments against contracts in order to identify underpaid claims and appeals with payers to collect all due amounts.</p>
                                             </div>
                                         </div>
@@ -72,9 +72,9 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/payment.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Retrospective Underpayment Review
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">MeBilling also looks at historic underpayments to identify and assess the overall impact of underpaid medical claims to optimize revenue. </p>
                                             </div>
                                         </div>
@@ -84,25 +84,16 @@
                                                 <div class="image-wrapper">
                                                     <img src="{{ asset('assets/images/followup.svg') }}" alt="">
                                                 </div>
-                                                <h2 class="titlee">
+                                                <h3 class="titlee">
                                                     Effective Action Plans
-                                                </h2>
+                                                </h3>
                                                 <p class="subtitlee">Our team does not just get and track the status of medical claims but also goes a step further to refile claims as well as appeals with due documentation. </p>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                {{--                                <div class="owl-nav"> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-prev" fdprocessedid="gvi4c"> --}}
-                                {{--                                        <span aria-label="Previous">‹</span></button> --}}
-                                {{--                                    <button type="button" role="presentation" class="owl-next" fdprocessedid="6u7ser"> --}}
-                                {{--                                        <span aria-label="Next">›</span></button> --}}
-                                {{--                                </div> --}}
-                                {{--                                <div class="owl-dots"> --}}
-                                {{--                                    <button role="button" class="owl-dot active"><span></span></button> --}}
-                                {{--                                    <button role="button" class="owl-dot"><span></span></button> --}}
-                                {{--                                </div> --}}
+
                             </div>
                         </div>
                     </div>
@@ -112,50 +103,7 @@
             </div>
         </section>
 
-{{--        <div class="why-us">--}}
-{{--            <div class="container-fluid">--}}
-{{--                <h2 class="coll">Payment Variance and Accounts Receivable Management </h2>--}}
-{{--                <p class="main-paragraph coll">--}}
-{{--                    MeBilling proposes its Revenue Optimization Program in contradiction of the below indications--}}
-{{--                </p>--}}
-{{--                <br>--}}
-{{--                <br>--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-md-3">--}}
-{{--                        <ul class="why-us-list">--}}
-{{--                            <li class="wow fadeIn list-style-one pr-3" data-wow-delay=".1s"  visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">--}}
-{{--                                <h5><i></i>Lost Revenue Assessment</h5>--}}
-{{--                                <p>MeBilling can help you identify contractual underpayments by performing a comprehensive analysis of all medical services against the contracts.</p>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-3">--}}
-{{--                        <ul class="why-us-list">--}}
-{{--                            <li class="wow fadeIn list-style-one" data-wow-delay=".5s"  visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">--}}
-{{--                                <h5><i ></i>Underpayment Recovery Services </h5>--}}
-{{--                            <p>Our team analyzes payments against contracts in order to identify underpaid claims and appeals with payers to collect all due amounts.</p>--}}
-{{--                            </li>--}}
 
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-3">--}}
-{{--                        <ul class="why-us-list">--}}
-{{--                            <li class="wow fadeIn list-style-one" data-wow-delay=".2s" visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">--}}
-{{--                                <h5><i ></i>Retrospective Underpayment Review</h5>--}}
-{{--                                <p>MeBilling also looks at historic underpayments to identify and assess the overall impact of underpaid medical claims to optimize revenue.</p>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-3">--}}
-{{--                        <ul class="why-us-list">--}}
-{{--                            <li class="wow fadeIn list-style-one pb-5" data-wow-delay=".6s" visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">--}}
-{{--                                <h5><i ></i>Effective Action Plans</h5>--}}
-{{--                                <p>Our team does not just get and track the status of medical claims but also goes a step further to refile claims as well as appeals with due documentation. </p>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
         <div class="key-strategies mb-5">
             <div class="container">
                 <h2>Revenue Cycle and Optimization Experts</h2>

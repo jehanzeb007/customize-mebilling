@@ -6,10 +6,6 @@
     <section>
         <div class="container mt-5">
 
-{{--            <div class="section-title">--}}
-{{--                <span>Simplify Medical Credentialing Without Any Hassle</span>--}}
-{{--            </div>--}}
-
             <div class="row">
                 <div class="col-md-8">
                     <h2>Simplify Medical Credentialing Without Hassle</h2>
