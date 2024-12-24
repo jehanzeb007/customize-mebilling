@@ -5,9 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Setting extends Model
+class GeneralSection extends Model
 {
     use HasFactory;
+    protected $guarded = [];
 
-    protected $fillable = ['key', 'value', 'type']; // Add 'type' to fillable fields
+    protected $casts = [
+        "value" => "array"
+    ];
 }

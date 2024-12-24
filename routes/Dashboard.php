@@ -12,6 +12,7 @@ use App\Http\Controllers\SuperAdmin\SettingController;
 use App\Http\Controllers\SuperAdmin\SliderController;
 use App\Http\Controllers\SuperAdmin\SlugskeywordsController;
 use App\Http\Controllers\SuperAdmin\TestimonialsController;
+use App\Http\Controllers\SuperAdmin\GeneralSectionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -112,6 +113,12 @@ use App\Http\Controllers\SuperAdmin\TestimonialsController;
         Route::post('/sorting', [FAQSController::class, 'sorting'])->name('sort');
     });
 
+    // sections
+    Route::prefix('section')->name('section.')->group(function() {
+        Route::get('/', [GeneralSectionsController::class, 'index'])->name('index');
+        Route::get('/add-section', [GeneralSectionsController::class, 'addSection'])->name('addSection');
+        Route::post('/store-section', [GeneralSectionsController::class, 'store'])->name('store');
+    });
 
     Route::prefix('media')->name('media.')->group(function () {
         Route::post('/upload/images', [ImageUploadController::class, 'upload'])->name('uploadimages');

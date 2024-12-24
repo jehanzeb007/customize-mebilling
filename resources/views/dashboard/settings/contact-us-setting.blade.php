@@ -103,41 +103,41 @@
                                 <div class="form-group">
                                     <label for="latitude">Latitude</label>
                                     <input type="text" name="latitude" class="form-control"
-                                        value="{{ old('latitude', $contactSettings['latitude']->data_value ?? '') }}">
+                                        value="{{ old('latitude', $contactSettings['latitude']->value ?? '') }}">
                                 </div>
 
                                 <!-- Longitude -->
                                 <div class="form-group">
                                     <label for="longitude">Longitude</label>
                                     <input type="text" name="longitude" class="form-control"
-                                        value="{{ old('longitude', $contactSettings['longitude']->data_value ?? '') }}">
+                                        value="{{ old('longitude', $contactSettings['longitude']->value ?? '') }}">
                                 </div>
 
                                 <!-- Description -->
                                 <div class="form-group">
                                     <label for="description">Description</label>
-                                    <textarea name="description" class="form-control" id="editor">{{ old('description', $contactSettings['description']->data_value ?? '') }}</textarea>
+                                    <textarea name="description" class="form-control" id="description">{{ old('description', $contactSettings['description']->value ?? '') }}</textarea>
                                 </div>
 
                                 <!-- Address -->
                                 <div class="form-group">
                                     <label for="address">Address</label>
-                                    <input type="text" name="address" class="form-control"
-                                        value="{{ old('address', $contactSettings['address']->data_value ?? '') }}">
+                                    <textarea name="address" class="form-control" id="address"
+                                        >{{ old('address', $contactSettings['address']->value ?? '') }}</textarea>
                                 </div>
 
                                 <!-- Phone No. -->
                                 <div class="form-group">
                                     <label for="phone_no">Phone No.</label>
                                     <input type="text" name="phone_no" class="form-control"
-                                        value="{{ old('phone_no', $contactSettings['phone_no']->data_value ?? '') }}">
+                                        value="{{ old('phone_no', $contactSettings['phone_no']->value ?? '') }}">
                                 </div>
 
                                 <!-- Email -->
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" name="email" class="form-control"
-                                        value="{{ old('email', $contactSettings['email']->data_value ?? '') }}">
+                                        value="{{ old('email', $contactSettings['email']->value ?? '') }}">
                                 </div>
 
                                 <!-- Submit Button -->
@@ -160,28 +160,31 @@
 
 
 @push('js')
-    <!--**********************************
-                                                                                                    Scripts
-                                                                                                ***********************************-->
 
-    <!-- Ck-editor -->
-    <script src="{{ asset('assets/vendor/ckeditor/ckeditor.js') }}"></script>
+
+    <script src="https://cdn.tiny.cloud/1/z6kb5eytp65raef6tfmipfzb5i411ze1jwcxe05m5vccgz1b/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
     <script>
-        ClassicEditor
-    .create(document.querySelector('#editor'), {
-        toolbar: [
-            'heading', '|',
-            'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|',
-            'imageUpload', 'blockQuote', 'insertTable', 'undo', 'redo'
-        ],
-        ckfinder: {
-            uploadUrl: '{{ route('admin.media.uploadimages') }}?_token={{ csrf_token() }}'
-        }
-    })
-    .catch(error => {
-        console.error(error);
-    });
+        tinymce.init({
+            selector: "#description, #address",
+            plugins: "code table list image",
+            toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | table | image | code',
+            valid_elements: '*[*]'
+        });
+    //     ClassicEditor
+    // .create(document.querySelector('#editor'), {
+    //     toolbar: [
+    //         'heading', '|',
+    //         'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|',
+    //         'imageUpload', 'blockQuote', 'insertTable', 'undo', 'redo'
+    //     ],
+    //     ckfinder: {
+    //         uploadUrl: '{{ route('admin.media.uploadimages') }}?_token={{ csrf_token() }}'
+    //     }
+    // })
+    // .catch(error => {
+    //     console.error(error);
+    // });
     </script>
 
     <script>

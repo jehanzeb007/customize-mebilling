@@ -20,7 +20,7 @@
                         <div class="mb-3">
                             <label class="form-label">Site Name</label>
                             <input type="text" class="form-control w-50" name="site_name" placeholder="Name"
-                                value="{{ old('site_name', $currentSettings->get('site_name')->data_value ?? '') }}">
+                                value="{{ old('site_name', $currentSettings->get('site_name')->value ?? '') }}">
                         </div>
 
                         <div class="row">
@@ -43,12 +43,12 @@
                                                         <label class="form-label">Meta Title</label>
                                                         <input type="text" class="form-control" name="meta_title"
                                                             placeholder="Title"
-                                                            value="{{ old('meta_title', $currentSettings->get('meta_title')->data_value ?? '') }}">
+                                                            value="{{ old('meta_title', $currentSettings->get('meta_title')->value ?? '') }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <label class="form-label">Meta Description</label>
-                                                    <textarea class="form-control" rows="3" name="meta_description" id="editor">{{ old('meta_description', $currentSettings->get('meta_description')->data_value ?? '') }}</textarea>
+                                                    <textarea class="form-control" rows="3" name="meta_description" id="meta_description">{{ old('meta_description', $currentSettings->get('meta_description')->value ?? '') }}</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -66,13 +66,13 @@
                                             <label style="font-size: 14px; color: #495057;">
                                                 <input type="radio" name="noIndexFollow" value="noIndexFollow"
                                                     id="noindex-follow-yes" style="margin-right: 5px;"
-                                                    {{ old('noIndexFollow', $currentSettings->get('noIndexFollow')->data_value ?? '') == 'noIndexFollow' ? 'checked' : '' }}>
+                                                    {{ old('noIndexFollow', $currentSettings->get('noIndexFollow')->value ?? '') == 'noIndexFollow' ? 'checked' : '' }}>
                                                 Yes
                                             </label>
                                             <label style="font-size: 14px; color: #495057;">
                                                 <input type="radio" name="noIndexFollow" value="indexFollow"
                                                     id="noindex-follow-no" style="margin-right: 5px;"
-                                                    {{ old('noIndexFollow', $currentSettings->get('noIndexFollow')->data_value ?? '') == 'indexFollow' ? 'checked' : '' }}>
+                                                    {{ old('noIndexFollow', $currentSettings->get('noIndexFollow')->value ?? '') == 'indexFollow' ? 'checked' : '' }}>
                                                 No
                                             </label>
                                         </div>
@@ -92,22 +92,22 @@
                                         <div class="card-body">
                                             <label class="form-label">Facebook</label>
                                             <input type="text" class="form-control" name="facebook"
-                                                value="{{ old('facebook', $currentSettings->get('facebook')->data_value ?? '') }}">
+                                                value="{{ old('facebook', $currentSettings->get('facebook')->value ?? '') }}">
                                         </div>
                                         <div class="card-body">
                                             <label class="form-label">Instagram</label>
                                             <input type="text" class="form-control" name="instagram"
-                                                value="{{ old('instagram', $currentSettings->get('instagram')->data_value ?? '') }}">
+                                                value="{{ old('instagram', $currentSettings->get('instagram')->value ?? '') }}">
                                         </div>
                                         <div class="card-body">
                                             <label class="form-label">LinkedIn</label>
                                             <input type="text" class="form-control" name="linkedin"
-                                                value="{{ old('linkedin', $currentSettings->get('linkedin')->data_value ?? '') }}">
+                                                value="{{ old('linkedin', $currentSettings->get('linkedin')->value ?? '') }}">
                                         </div>
                                         <div class="card-body">
                                             <label class="form-label">Twitter / X</label>
                                             <input type="text" class="form-control" name="twitter"
-                                                value="{{ old('twitter', $currentSettings->get('twitter')->data_value ?? '') }}">
+                                                value="{{ old('twitter', $currentSettings->get('twitter')->value ?? '') }}">
                                         </div>
                                     </div>
                                 </div>
@@ -115,17 +115,18 @@
                                 <!-- Footer Text Section -->
                                 <div class="filter cm-content-box box-primary">
                                     <div class="content-title">
-                                        <div class="cpa">Footer Text</div>
+                                        <div class="cpa">
+                                            Footer Text
+                                        </div>
                                         <div class="tools">
                                             <a href="javascript:void(0);" class="expand SlideToolHeader"><i
                                                     class="fal fa-angle-down"></i></a>
                                         </div>
                                     </div>
-                                    <div class="cm-content-body publish-content form excerpt">
-                                        <div class="card-body">
-                                            <div class="mb-3">
-                                                <label class="form-label">Add Text</label>
-                                                <textarea class="form-control" rows="3" name="footer_text">{{ old('footer_text', $currentSettings->get('footer_text')->data_value ?? '') }}</textarea>
+                                    <div class="cm-content-body  form excerpt">
+                                        <div class="card h-auto">
+                                            <div class="card-body pt-3">
+                                                <textarea id="editor" name="footer_text">{!! $currentSettings->get('footer_text')->value ?? '' !!}</textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +156,7 @@
                                                         <!-- Logo Preview -->
                                                         <div class="avatar-preview">
                                                             <div id="imagePreview"
-                                                                style="background-image: url({{ isset($currentSettings['logo']) && $currentSettings['logo']->data_value ? asset('storage/' . $currentSettings['logo']->data_value) : asset('assets/images/no-img-avatar.png') }});">
+                                                                style="background-image: url({{ isset($currentSettings['logo']) && $currentSettings['logo']->value ? asset('storage/' . $currentSettings['logo']->value) : asset('assets/images/no-img-avatar.png') }});">
                                                             </div>
                                                         </div>
                                                         <!-- File Input -->
@@ -183,28 +184,27 @@
 
 
 @push('js')
-    <!--**********************************
-                                                                                                                                    Scripts
-                                                                                                                                ***********************************-->
+
+    <script src="{{ asset('admin-assets/js/dashboard/cms.js') }}"></script>
 
     <!-- Ck-editor -->
-    <script src="{{ asset('assets/vendor/ckeditor/ckeditor.js') }}"></script>
+    {{-- <script src="{{ asset('admin-assets/vendor/ckeditor/ckeditor.js') }}"></script> --}}
+    <script src="https://cdn.tiny.cloud/1/z6kb5eytp65raef6tfmipfzb5i411ze1jwcxe05m5vccgz1b/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <script>
-         ClassicEditor
-    .create(document.querySelector('#editor'), {
-        toolbar: [
-            'heading', '|',
-            'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|',
-            'imageUpload', 'blockQuote', 'insertTable', 'undo', 'redo'
-        ],
-        ckfinder: {
-            uploadUrl: '{{ route('admin.media.uploadimages') }}?_token={{ csrf_token() }}'
+<script>
+    tinymce.init({
+        selector: '#editor',
+        plugins: 'code table lists image',
+        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | table | image | code',
+        valid_elements: '*[*]',
+        setup: function (editor) {
+            editor.on('init', function () {
+                editor.getBody().classList.add('fa');
+            });
         }
-    })
-    .catch(error => {
-        console.error(error);
     });
+
+
     </script>
 
     <script>

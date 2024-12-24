@@ -4,8 +4,8 @@
         <div class="container-fluid">
             <div class="page-titles">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Setting</a></li>
-                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Site Settings</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Section</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">List</a></li>
                 </ol>
             </div>
             <!-- Row -->
@@ -46,7 +46,7 @@
                     <div class="filter cm-content-box box-primary">
                         <div class="content-title">
                             <div class="cpa">
-                                <i class="fa-solid fa-file-lines me-1"></i>Settings List
+                                <i class="fa-solid fa-file-lines me-1"></i>Section List
                             </div>
                             <div class="tools">
                                 <a href="javascript:void(0);" class="expand SlideToolHeader"><i
@@ -66,7 +66,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($currentSettings as $index => $setting)
+                                            {{-- @foreach ($currentSettings as $index => $setting)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>{{ ucwords(str_replace('_', ' ', $setting->key)) }}</td>
@@ -82,18 +82,18 @@
                                                         @endif
                                                     </td>
                                                 </tr>
-                                            @endforeach
+                                            @endforeach --}}
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="text-end mb-3">
                                     <a href="{{ route('admin.settings.settingpage') }}" class="btn btn-primary"
                                         type="submit">
-                                        @if ($currentSettings->count() > 0)
+                                        {{-- @if ($currentSettings->count() > 0)
                                             Edit Settings
                                         @else
                                             Add Settings
-                                        @endif
+                                        @endif --}}
                                     </a>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
     </div>
 @endsection
 
-@push('js')
+{{-- @push('js')
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -119,4 +119,4 @@
 
         });
     </script>
-@endpush
+@endpush --}}

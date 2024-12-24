@@ -67,18 +67,19 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{{ route('admin.settings.settingpagelist') }}">Site Settings</a></li>
-                    <li><a href="{{ route('admin.settings.contactlist') }}">Content us</a></li>
+                    <li><a href="{{ route('admin.settings.contactlist') }}">Contact info</a></li>
                 </ul>
 
 
-                {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                     <i class="flaticon-381-television"></i>
-                    <span class="nav-text">Profile Category</span>
+                    <span class="nav-text">Sections</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="">Post Details</a></li>
+                    <li><a href="{{ route('admin.section.index')}}">Sections</a></li>
+                    <li><a href="{{ route('admin.section.addSection')}}">Add Section</a></li>
                 </ul>
-            </li> --}}
+            </li>
 
 
                 {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">

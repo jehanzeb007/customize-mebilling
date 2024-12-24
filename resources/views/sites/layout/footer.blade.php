@@ -1,4 +1,4 @@
-<footer class="footer-bg footer-p">
+{{-- <footer class="footer-bg footer-p">
     <div class="overly"><img src="{{asset('assets/images/footer-bg.png')}}" alt="rest"></div>
     <div class="footer-top pb-30" style="background-color: #ECF1FA;">
         <div class="container">
@@ -7,10 +7,10 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                         <div class="flog mb-35">
-                            <a href="#"><img src="{{asset('assets/images/logo.png')}}" alt="logo"></a>
+                            <a href="#"><img src="{{ asset('storage/' . $logoPath ) }}" alt="logo"></a>
                         </div>
                         <div class="footer-text mb-20">
-                            <p> {{ $footerText }} </p>
+                            <p>footerText </p>
                         </div>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -39,23 +39,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-xl-2 col-lg-2 col-sm-6">
-                    <div class="footer-widget mb-30">
-                        <div class="f-widget-title">
-                            <h5>Other Links</h5>
-                        </div>
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Project</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
-                                <li><a href="#"><i class="fas fa-chevron-right"></i> Latest Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> --}}
+
                 <div class="col-xl-4 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-30">
                         <div class="f-widget-title">
@@ -77,33 +61,7 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                         <span>100 Glenborough Dr,<br>Suite 400 Houston, TX 77067</span>
                                     </li>
-                                    {{-- <li style="margin-bottom: 0px !important;"> --}}
 
-                                    {{-- </li> --}}
-                                    {{-- <li> --}}
-                                        {{-- <form name="ajax-form" action="#" method="post" class="contact-form">
-                                            <div class="form-group" style="display: flex; align-items: center;">
-                                                <input
-                                                    class="form-control"
-                                                    id="email2"
-                                                    name="email"
-                                                    type="email"
-                                                    placeholder="Email Address..."
-                                                    value=""
-                                                    required=""
-                                                    style="flex: 1; margin-right: 10px;"
-                                                />
-                                                <button
-                                                    type="submit"
-                                                    class="btn btn-custom"
-                                                    id="send2"
-                                                    style="white-space: nowrap;"
-                                                >
-                                                    Subscribe
-                                                </button>
-                                            </div>
-                                        </form> --}}
-                                    {{-- </li> --}}
                                     <li>
                                     <div class="col-md-12 p-0 newslater-area mb-0">
                                         <h6 class="mb-3">Subscribe To Our Newsletter</h6>
@@ -139,4 +97,12 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> --}}
+@php
+    $footerText = str_replace("@{siteLogo}", asset('storage/' . $logoPath), $footerText);
+    $footerText = str_replace("@{sitePhone}", $sitePhone, $footerText);
+    $footerText = str_replace("@{siteEmail}", $siteEmail, $footerText);
+    $footerText = str_replace("@{siteAddress}", $siteAddress, $footerText);
+@endphp
+
+{!! $footerText !!}

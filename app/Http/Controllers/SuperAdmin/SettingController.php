@@ -15,9 +15,9 @@ class SettingController extends Controller
      */
     public function showSettingPageListing()
 {
-    $currentSettings = Setting::where('type', '!=', 'contact setting')->get()->keyBy('data_key');
-    $logoPath = $currentSettings['logo']->data_value ?? 'default-logo.png';  // Default logo if not found
-    $footerText = $currentSettings['footer_text']->data_value ?? 'Default footer text';
+    $currentSettings = Setting::where('type', '!=', 'contact setting')->get()->keyBy('key');
+    $logoPath = $currentSettings['logo']->value ?? 'default-logo.png';  // Default logo if not found
+    $footerText = $currentSettings['footer_text']->value ?? 'Default footer text';
 
     return view('dashboard.settings.setting-site-listing', compact('currentSettings', 'logoPath', 'footerText'));
 }
@@ -28,7 +28,7 @@ class SettingController extends Controller
      */
     public function showSettingPage()
     {
-        $currentSettings = Setting::where('type', '!=', 'contact setting')->get()->keyBy('data_key');
+        $currentSettings = Setting::where('type', '!=', 'contact setting')->get()->keyBy('key');
         return view('dashboard.settings.site-settings-form', compact('currentSettings'));
     }
 
@@ -37,13 +37,13 @@ class SettingController extends Controller
      */
     public function showContactList()
     {
-        $contactSettings = Setting::where('type', 'contact setting')->get()->keyBy('data_key');
+        $contactSettings = Setting::where('type', 'contact setting')->get()->keyBy('key');
         return view('dashboard.settings.contact-us-list', compact('contactSettings'));
     }
 
     public function showContactSettingPage()
     {
-        $contactSettings = Setting::where('type', 'contact setting')->get()->keyBy('data_key');
+        $contactSettings = Setting::where('type', 'contact setting')->get()->keyBy('key');
         return view('dashboard.settings.contact-us-setting', compact('contactSettings'));
     }
 
@@ -81,10 +81,10 @@ class SettingController extends Controller
         foreach ($request->all() as $key => $value) {
 
             if ($key !== 'type' && $key !== '_token' && $key !== 'logo') {
-                $data_value = empty($value) ? null : $value;
+                $value = empty($value) ? null : $value;
                 Setting::updateOrCreate(
-                    ['data_key' => $key, 'type' => 'site_setting'],
-                    ['data_value' => $data_value]
+                    ['key' => $key, 'type' => 'site_setting'],
+                    ['value' => $value]
                 );
             }
         }
@@ -105,10 +105,10 @@ class SettingController extends Controller
 
         foreach ($inputFields as $key => $value) {
 
-            if (is_string($value) && $key !== '_token' && $key !== 'type') {
+            if ($key !== '_token' && $key !== 'type') {
                 Setting::updateOrCreate(
-                    ['data_key' => $key, 'type' => 'contact setting'],
-                    ['data_value' => $value]
+                    ['key' => $key, 'type' => 'contact setting'],
+                    ['value' => $value]
                 );
             }
         }
@@ -121,16 +121,16 @@ class SettingController extends Controller
     private function handleLogoUpload($request)
     {
         try {
-            $logoSetting = Setting::where('data_key', 'logo')->first();
+            $logoSetting = Setting::where('key', 'logo')->first();
 
-            if ($logoSetting && $logoSetting->data_value && Storage::exists('public/' . $logoSetting->data_value)) {
-                Storage::delete('public/' . $logoSetting->data_value);
+            if ($logoSetting && $logoSetting->value && Storage::exists('public/' . $logoSetting->value)) {
+                Storage::delete('public/' . $logoSetting->value);
             }
 
             $logoPath = $request->file('logo')->store('logos', 'public');
             Setting::updateOrCreate(
-                ['data_key' => 'logo'],
-                ['data_value' => $logoPath, 'type' => 'site_setting']
+                ['key' => 'logo'],
+                ['value' => $logoPath, 'type' => 'site_setting']
             );
         } catch (\Exception $e) {
             return redirect()->back()->withErrors(['logo' => 'Failed to upload logo.']);
