@@ -35,7 +35,7 @@
                             <div class="row justify-content-center">
                                 <div class="mb-15">
                                     <div class="mb-15">
-                                        <h3>Streamline Clinical Quality $ Optimize Operation with Actionable Insight</h3>
+                                        <h2>Streamline Clinical Quality $ Optimize Operation with Actionable Insight</h2>
                                         <p>MeBilling offers fast and reliable performance analytics with up-to-the-minute and accurate reports to help make sound data-driven decisions. MeBilling is your credentialing, billing, revenue cycle management, and real-time data analytics partner, whether you operate a lab, an urgent care center, a skilled nursing facility, a hospital, a multi-location healthcare group, a clinic, or a provider group!</p>
                                         <p>Our robust and secure analytics and reporting system allows healthcare and medical providers to receive real-time and accurate information in visual charts and graphs so you can make real-time decisions on the go.</p>
                                         <p>Our insightful reports help medical providers and administrators in Texas, Michigan, New York, Illinois, and New Jersey report benchmarks, revenue, outcomes, and relative value units, and forecast quickly and conveniently in real-time. MeBilling gives you complete transparency into the health of your medical practice, such as a hospital, clinic, or multi-location health group. </p>
@@ -108,16 +108,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{--                                <div class="owl-nav"> --}}
-                                    {{--                                    <button type="button" role="presentation" class="owl-prev" fdprocessedid="gvi4c"> --}}
-                                    {{--                                        <span aria-label="Previous">‹</span></button> --}}
-                                    {{--                                    <button type="button" role="presentation" class="owl-next" fdprocessedid="6u7ser"> --}}
-                                    {{--                                        <span aria-label="Next">›</span></button> --}}
-                                    {{--                                </div> --}}
-                                    {{--                                <div class="owl-dots"> --}}
-                                    {{--                                    <button role="button" class="owl-dot active"><span></span></button> --}}
-                                    {{--                                    <button role="button" class="owl-dot"><span></span></button> --}}
-                                    {{--                                </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -130,14 +120,14 @@
 
         <div class="container">
             <div >
-                <h3>Use MeBilling's Analytics and Reports to See the Big Picture</h3>
+                <h2>Use MeBilling's Analytics and Reports to See the Big Picture</h2>
             <p>Healthcare analytics is an essential aspect of running and scaling your healthcare business. However, the most crucial part is putting healthcare information to work for you through experienced and well-trained leaders who have access to the most relevant and important metrics and know how to incorporate them into their daily operations and decision-making.</p>
             <p>Our fully customizable analytic solutions make it simpler to see your data and run your practice or hospital. Our analytics tools and reports empower your employees by giving in-depth and valuable insights from data. You will get the information to identify what is working and what is not working and adjust processes quickly. </p>
         </div>
         </div>
 
         <div class="container">
-            <h3>Performance Analytics and Reporting for Reliable, Data-Driven Strategic</h3>
+            <h2>Performance Analytics and Reporting for Reliable, Data-Driven Strategic</h2>
             <p>Work with MeBilling to get complete financial visibility of your medical practice.</p>
             <ul class="list-style-one p-0">
                 <li>Receive real-time and in-depth analysis as well as key performance indicators of your healthcare organization's operations. </li>

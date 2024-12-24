@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-md-12">
 
-                        <h2>Efficient and Cost-Effective ASC Billing & Coding for Superior Results
+                        <h2>Efficient and Cost-Effective ASC Billing & Coding for Results
                         </h2>
 
                     <p>

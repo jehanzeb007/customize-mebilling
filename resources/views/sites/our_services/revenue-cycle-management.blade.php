@@ -94,7 +94,7 @@
 
                                     </div>
                                 </div>
-                    
+
                             </div>
                         </div>
                     </div>
@@ -102,65 +102,13 @@
                 </div>
                 </div>
 
-
-
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="section-title text-center mb-4">--}}
-{{--                    <span>How We Help</span>--}}
-{{--                    <p>MeBilling simplifies the process to deliver streamlined, valuable services that others can't. We are transparent, honest, responsive, and always put our clients first: excellent communication, no long-term contracts, and top-quality customer service.</p>--}}
-{{--                </div>--}}
-{{--            <div class="col-md-3">--}}
-{{--                <div class="card">--}}
-{{--                    <div class="front">--}}
-{{--                        <h3>Increase Revenue </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="back">--}}
-{{--                        <p>With a team of dedicated and passionate experts at the helm, MeBilling’s all-inclusive approach to revenue cycle management offers a seamless payment cycle to boost your profit margin.</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-md-3">--}}
-{{--                <div class="card">--}}
-{{--                    <div class="front">--}}
-{{--                        <h3>Reduce Account Receivable </h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="back">--}}
-{{--                        <p>Our team regularly follows up on all claims to ensure timely reimbursements, and we specialize in aging A/R recovery.</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-md-3">--}}
-{{--                <div class="card">--}}
-{{--                    <div class="front">--}}
-{{--                        <h3>High Clean Claims Rate</h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="back">--}}
-{{--                        <p>Our expert claim scrubbing team ensures clean and error-free medical claims for faster reimbursement and considerably reduces the risks of denials and rejections.</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-md-3">--}}
-{{--                <div class="card">--}}
-{{--                    <div class="front">--}}
-{{--                        <h3>Analytics and Reporting</h3>--}}
-{{--                    </div>--}}
-{{--                    <div class="back">--}}
-{{--                        <p>Make sound and prudent decisions with our data-driven and in-depth reports that offer complete healthcare analytics so you can gain a new level of insight into your hospital operations.</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-
-
         <div class="container">
             <h2>Critical Revenue Cycle Solutions</h2>
             <p>Whether it is ICD-10 training, meaningful use adoption, transitions to different payer payment models, or electronic charge capture, hospitals, physicians, and other healthcare providers must be equipped with the tools and information to respond to changes in the industry effectively and quickly.</p>
             <p>MeBilling is an expert in all these areas, and we are here to help you prepare and equip you for the future of the industry.</p>
-            <h2 class="mt-5">Our Innovative and Secure RCM Solutions Combine Human Experts and Technology</h2>
+            <h2 class="mt-5">Innovative & Secure RCM Solutions Combine Human Experts and Technology</h2>
             <p>Take control of patient data and the financial health of your organization. Plug security holes and get claims paid faster. </p>
+            </div>
             </div>
     </section>
 

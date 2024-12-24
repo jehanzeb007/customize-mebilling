@@ -123,7 +123,7 @@
                 <p>An efficient and optimized revenue cycle and a sound set of internal policies ensure reliable and smooth healthcare billing processes and a high collection rate on medical services rendered. </p>
                 <p>Our professionals and subject matter experts review workflows and claim filing to identify pitfalls affecting financial success.</p>
                 <br>
-                <h2>Gain Financial Control of Your Hospital or Medical Practice with MeBilling</h2>
+                <h2>Gain Financial Control of Your Hospital or Practice with MeBilling</h2>
                 <p>Our RCM and billing professional submit clean medical claims, reducing the risk of rejections. This will help you optimize the revenue cycle process and take complete financial control of your health organization. </p>
 
             </div>
