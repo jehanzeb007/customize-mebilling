@@ -11,14 +11,19 @@ class GeneralSectionsController extends Controller
 {
     public function index()
     {
-        $sections = GeneralSection::all();
-        dd  ($sections);
-        return view("dashboard.sections.index");
+        $sections = GeneralSection::get();
+
+        return view("dashboard.sections.index", compact('sections'));
     }
 
-    public function addSection()
+    public function addSection($id = null)
     {
-        return view("dashboard.sections.add-section");
+        $data = [];
+
+        if ($id) {
+            $data['sections'] = GeneralSection::findOrFail($id);
+        }
+        return view('dashboard.sections.add-section', $data);
     }
 
     public function store(SectionRequest $request)

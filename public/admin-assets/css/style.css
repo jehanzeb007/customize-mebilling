@@ -33758,3 +33758,7 @@ img {
 .dripicons-mail:before {
     content: "\e015";
 }
+
+td p {
+    margin-bottom: 0px;
+}

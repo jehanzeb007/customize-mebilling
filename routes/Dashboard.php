@@ -117,7 +117,8 @@ use App\Http\Controllers\SuperAdmin\GeneralSectionsController;
     Route::prefix('section')->name('section.')->group(function() {
         Route::get('/', [GeneralSectionsController::class, 'index'])->name('index');
         Route::get('/add-section', [GeneralSectionsController::class, 'addSection'])->name('addSection');
-        Route::post('/store-section', [GeneralSectionsController::class, 'store'])->name('store');
+        Route::post('/store-section/{id?}', [GeneralSectionsController::class, 'store'])->name('store');
+        Route::get('/edit-section/{id}', [GeneralSectionsController::class, 'addSection'])->name('editSection');
     });
 
     Route::prefix('media')->name('media.')->group(function () {

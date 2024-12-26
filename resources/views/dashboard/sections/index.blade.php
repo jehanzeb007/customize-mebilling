@@ -2,11 +2,11 @@
 @section('content')
     <div class=" default-height">
         <div class="container-fluid">
-            <div class="page-titles">
+            <div class="page-titles d-flex align-items-center justify-content-between">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="javascript:void(0)">Section</a></li>
                     <li class="breadcrumb-item active"><a href="javascript:void(0)">List</a></li>
-                </ol>
+                </ol>\<a href="{{ route('admin.section.addSection') }}" class="btn btn-primary">Add Section</a>
             </div>
             <!-- Row -->
             <div class="row">
@@ -63,39 +63,31 @@
                                                 <th class="text-black">S.No</th>
                                                 <th class="text-black">Title</th>
                                                 <th class="text-black">Value</th>
+                                                <th class="text-black text-end">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {{-- @foreach ($currentSettings as $index => $setting)
+                                            @foreach ($sections as $index => $section)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
-                                                    <td>{{ ucwords(str_replace('_', ' ', $setting->key)) }}</td>
+                                                    <td>{{ ucwords(str_replace('_', ' ', $section->key)) }}</td>
                                                     <td>
-                                                        <!-- Check if the value is an image URL or path -->
-                                                        @if (preg_match('/\.(jpg|jpeg|png|gif)$/i', $setting->value))
-                                                            <!-- Display the image if value is a valid image path -->
-                                                            <img src="{{ asset('storage/' . $setting->value) }}"
-                                                                alt="Image" style="width: 100px; height: auto;">
-                                                        @else
-                                                            <!-- Otherwise, display the text value -->
-                                                            {{ $setting->value }}
-                                                        @endif
+                                                        {!! $section->value['short_description'] ?? '' !!}
+                                                    </td>
+                                                    <td class="text-end">
+                                                        <a href="{{route('admin.section.editSection', $section->id) }}" class="btn btn-warning btn-sm content-icon">
+                                                            <i class="fa fa-edit" id='edit-{{$section->id}}'></i>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-danger btn-sm content-icon">
+                                                            <i class="fa fa-times" id='delete-{{$section->id}}'></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
-                                            @endforeach --}}
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="text-end mb-3">
-                                    <a href="{{ route('admin.settings.settingpage') }}" class="btn btn-primary"
-                                        type="submit">
-                                        {{-- @if ($currentSettings->count() > 0)
-                                            Edit Settings
-                                        @else
-                                            Add Settings
-                                        @endif --}}
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -105,18 +97,6 @@
     </div>
 @endsection
 
-{{-- @push('js')
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-    <script>
-        $(function() {
-            $("#datepicker").datepicker({
-                autoclose: true,
-                todayHighlight: true
-            }).datepicker('update', new Date());
-
-        });
-    </script>
-@endpush --}}
+@push('js')
+    <script src="{{ asset('admin-assets/js/dashboard/cms.js') }}"></script>
+@endpush
