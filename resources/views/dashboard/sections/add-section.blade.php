@@ -23,19 +23,19 @@
                                 <div class="form-group">
                                     <label for="title">Title</label>
                                     <input type="text" name="key" class="form-control"
-                                        value="{{ old('key', $contactSettings['latitude']->value ?? '') }}">
+                                        value="{{ old('key', $sections->key ?? '') }}">
                                 </div>
 
                                 <!-- Short Description -->
                                 <div class="form-group">
                                     <label for="short_description">Short Description</label>
-                                    <textarea name="value[short_description]" class="form-control" id="short-description">{{ old('description', $contactSettings['description']->value ?? '') }}</textarea>
+                                    <textarea name="value[short_description]" class="form-control" id="short-description">{{ old('short_description', $sections->value['short_description']?? '') }}</textarea>
                                 </div>
 
                                 <!-- long Description -->
                                 <div class="form-group">
                                     <label for="long_description">Long Description</label>
-                                    <textarea name="value[long_description]" class="form-control" id="long-description">{{ old('description', $contactSettings['description']->value ?? '') }}</textarea>
+                                    <textarea name="value[long_description]" class="form-control" id="long-description">{{ old('long_description', $sections->value['long_description'] ?? '') }}</textarea>
                                 </div>
 
                                 <!-- Submit Button -->
